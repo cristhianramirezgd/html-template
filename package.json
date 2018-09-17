@@ -1,0 +1,23 @@
+{
+  "name": "template-um",
+  "version": "1.0.0",
+  "description": "template html for total-code-platform",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cristhianramirezgd/html-template.git"
+  },
+  "author": "cristhianramirez@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cristhianramirezgd/html-template/issues"
+  },
+  "homepage": "https://github.com/cristhianramirezgd/html-template#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-zip": "^4.2.0"
+  }
+}
