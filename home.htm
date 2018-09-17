@@ -1,0 +1,85 @@
+<style>
+#home_banners_small img {
+	margin-left:17px;
+	margin-bottom:20px;
+}
+</style>
+
+<main class="home_um">
+  <h1 style="display:none;">universomascotas.co</h1>
+  <section class="grid-container full">
+    <div class="grid-container">
+      [[home_banners]] 
+    </div>
+  </section>
+  <section class="grid-container full">
+  	<div class="grid-container" id="maincontent">
+      <div class="small-12 top-brand-title">
+        <h2 class="h4"><i class="fas fa-certificate"></i> Marcas top</h2>
+      </div>
+      <div class="small-12 top-brand-carousel">
+  		  [[carrousel(3)]]
+      </div>
+  	</div>
+  </section>
+  <section class="grid-container grid-x align-middle banner-one">
+    <div class="small-12 large-4">
+      [[carrousel(1)]]
+    </div>
+    <div class="group-home small-12 large-8">
+      [[grupo(7|6|3)]]
+    </div>
+  </section>
+  <section class="grid-container grid-x circle-button">
+    <div class="small-6 large-3 buttom-item"></div>
+    <div class="small-6 large-3 buttom-item"></div>
+    <div class="small-6 large-3 buttom-item"></div>
+    <div class="small-6 large-3 buttom-item"></div>
+  </section>
+
+  <section class="grid-container grid-x align-middle banner-two">
+    <div class="small-12 large-4">
+      [[carrousel(2)]]
+    </div>
+    <div class="group-home small-12 large-8">
+      [[grupo(8|6|3)]]
+    </div>
+  </section>
+</main>    
+<script type="text/javascript">
+  $('#carrousel_3').slick({
+      infinite: true,
+      arrows: true,
+      nextArrow: '<i class="fas fa-chevron-right slick-next"></i>',
+      prevArrow: '<i class="fas fa-chevron-left slick-prev"></i>',
+      slidesToShow:8,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 7000,
+      lazyLoad: 'ondemand',
+      dots: false,
+      responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 6 
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              arrows: false,
+              centerMode: true,
+              centerPadding: '40px',
+              slidesToShow: 3
+            }
+          }
+        ]
+  });
+</script>
+
+
+
