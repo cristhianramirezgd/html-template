@@ -1,19 +1,26 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta charset="utf-8" />
+<meta name="theme-color" content="#ff5722">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>[[meta_tag_title]]</title>
 <meta name="description" content="[[meta_tag_description]]" />
 <meta name="keywords" content="[[meta_tag_keywords]]" />
 <meta name="generator" content="TotalCode - www.totalcode.com.co">
-<link href="[[cdn_domain]]/css/tetengoelregalo/style.css" rel="stylesheet" type="text/css" />
-<link href="[[cdn_domain]]/css/tetengoelregalo/totalcode.css" rel="stylesheet" type="text/css" />
+<link href="/css/universomascotas/app.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <link rel="shortcut icon" type="image/png" href="[[cdn_private_domain]]/images/banners/favicon.png" />
 <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 <script src="[[cdn_domain]]/javascript/jquery.menu-aim.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="https://cdn.totalcode.com.co/javascript/slick/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<link rel="manifest" href="[[cdn_url]]/web_content/assets/manifest.json">
 <script>
 //variables de dibujar ventana para mostrar shopping cart
 var poner_contenido=1;
@@ -35,87 +42,52 @@ function hidetabs(name) {
 </head>
 
 <body>
-
-
-
-	[[main_shopping_cart_status_prepare]]
-	<div style="background-color:#BA0D14;">
-		<div style="width:1180px; margin:0 auto; background-color:#BA0D14; height:40px; border:0px solid blue;">
-			<div style="width:600px; color:#fff; font-size:13px; border:0px solid green; float:right;">
-				
-				<ul class="links" >
-					<li> 
-						<a href="" >Invita un amigo, consigue $20.000 pesos</a>&nbsp;|
-					</li>
-					<li> 
-						<a href="/myaccount/">Regístrate</a>&nbsp;|
-					</li>
-					<li class="first">
-						<a title="Mi cuenta" href="/myaccount/">Mi cuenta</a>
-				    </li>
-				    <li>
-				        <a title="Mi lista de Regalos" href="/wishlists/">Mi lista de Regalos</a>
-				    </li>
-				</ul>
-			</div>
-			<div style="clear:both;"></div>
-		</div>
-	</div>
-<div style="background:#fff; width:1180px; margin:0 auto; border:0px solid blue; ">
-	<div style="border:0px solid red;">
-		<div style="float:left; border:0px solid green; margin-top:-15px; height:120px; ">
-			<a href="/"><img src="[[cdn_domain]]/css/tetengoelregalo/images/logo.png" border="0"></a>
-		</div>
-		<div style="float:left; border:0px solid green; margin-top:15px; margin-left:0px;">
-			<img src="[[cdn_domain]]/css/tetengoelregalo/images/banner_middle.png" border="0">
-		</div>
-		<div style="float:right; margin-top:15px; border:0px solid green; width:260px; color: #a9a9a9; ">
-			<div style="float:left; margin-right:0px; margin-top: -10px;">
-				<img src="[[cdn_domain]]/css/tetengoelregalo/images/phone-contact.png" border="0" >
-			</div>
-			<div style="float:right; border:0px solid red; width:200px;">
-				 <div style="font-size: 20px; margin-top:0px; font-weight:bold;border:0px solid blue;">
-				 	<div style="font-size:14px; width:40px; float:left; margin-top:0px;">PBX:</div> (1) 211-1111
-				 </div>
-				 <div style="border:0px solid blue;">Envíos a toda Colombia</div>
-				 <div style="border:0px solid blue; width:196px; margin-left:0px; font-size:9px; margin-top:4px;">
-				 	<div style="font-weight:bold; font-size:10px ">Atención vía Chat:</div>
-					<div style="float:left; width:90px; font-weight:bold; ">Lunes a Viernes</div><div style="float:left; margin-left:6px;">7:00 a.m. - 9:00 p.m.</div>
-					<div style="clear:both;"></div>
-					<div style="float:left; width:90px; font-weight:bold; ">Sábados</div><div style="float:left; margin-left:6px;">8:00 a.m. - 9:00 p.m.</div>
-					<div style="clear:both;"></div>
-					<div style="float:left; width:90px; font-weight:bold; ">Domingos</div><div style="float:left; margin-left:6px;">10:00 a.m. - 5:00 p.m.</div>
-					<div style="clear:both;"></div>
+		<!-- header -->
+		<header class="header-um">
+			<div class="grid-container full bg-black">
+				<div class="grid-x text-center">
+							<div class="small-12 large-4 large-offset-4 topbarslide">
+								<div><a class="text-white" href=""><small>Envío gratis / Por compras superiores a $100.000</a></small></div>
+								<div><a class="text-white" href=""><small>Invita un amigo, consigue $20.000 pesos</a></small></div>
+								<div><a class="text-white" href=""><small>Envíos a toda Colombia</a></small></div>
+							</div>
 				</div>
 			</div>
-			<div style="clear:both;"></div>
-
-		</div>
-		<div style="clear:both;"></div>
-	</div>
-	
-	<div style="clear:both;"></div>
-	
-<!-- header carrito, search, gruoups -->
-<div  style="width:1180px; background:#dbdbdb; height:45px;">
-	<div id="contenedor_show_group" style="float:left; margin-left:40px; margin-top:5px; border:1px solid transparent; ">
-		<div  style="">
-			<a href="#" id="show-group">
-			<div  style="float:left;">
-			Compras por<br /><b>Departamentos</b>
+			<div class="grid-container-full bg-medium-gray show-for-large">
+				<div class="grid-container">
+					<div class="grid-x text-center">
+						<div class="small-12 large-4">
+							<a class="text-dark-gray" href="">| <small class="small-margin-collapse text-dark-gray"><i class="text-warning fas fa-lock"></i> COMPRA 100% SEGURA</small></a>
+						</div>
+						<div class="small-12 large-5 large-offset-3">
+							<a class="text-dark-gray" href=""><small><i class="fas fa-info-circle"></i> ¿COMO COMPRAR?</small> |</a> 
+							<a class="text-dark-gray" href="/myaccount/"><small>QUIERO VENDER</small> |</a>
+							<a class="text-dark-gray" href="https://api.whatsapp.com/send?phone=573112312252" target="_blank"><small><i class="fab fa-whatsapp text-success"></i> SERVICIO AL CLIENTE</small></a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<div style="margin-left:8px; width:30px; float:right; ">
-				<img id="arrow_show_groups" src="[[cdn_domain]]/css/tetengoelregalo/images/arrow_down.png" border="0" style="margin-top:12px;" >
+			<div class="grid-container full bg-white grid-y scroll-navigation">
+				<div class="grid-container small-12">
+					<div class="grid-x text-center grid-padding-x">
+						<div class="small-12 large-3 logo-um">
+							<a href="/"><img src="[[cdn_domain]]/universomascotas/images/banners/logo_1_es.png" alt="logo Universomascotas.co"></a>
+						</div>
+						<div class="small-12 large-6 formsearchcontainer grid-x align-middle ">
+							<div class="cell auto">
+								<form id="searchform" class="searchformum" action="/search/" method="get">
+									<input type="text" name="k" class="input_buscar" id="buscar" value="" placeholder="Encuentra productos y servicios para tu mascota" name="Buscar"  />
+									<input type="submit" value="Buscar" class="searchbutton button alert text-white" />
+									<!-- <a href="" class="button alert"><i class=" text-white fas fa-pencil-alt"></i></a> -->
+									<!-- <a href="" class="button alert"><i class=" text-white fas fa-camera"></i></a> -->
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			</a>
-		</div>
-		<div id="left_grupos_slide1" style=" width:205px; z-index:1000; margin-top:30px; float:left; margin-left:0px; position:absolute; display:none;">
-			<div style="height:3px;">&nbsp;</div>
-			<div>
-				[[main_category_menu_vert]]
-			</div>
-		</div>
-		<div style="clear:both;"></div>
+		</header>
+	<!-- .header -->
 		<script language="Javascript">
 			var poner_grupo=1;
 		</script>
@@ -151,100 +123,176 @@ function hidetabs(name) {
 				});
 			})
 		</script>
-	</div>
-	<div style="float:left; border:0px solid red; width:560px; margin-left:33px; margin-top:6px;">
-		<div style="border:1px solid transparent; width:560px;">
-				<form id="searchform" action="/search/" method="get">
-					<div style="float:left; margin-top:6px;">Búsqueda:&nbsp;</div>
-					<input type="text" name="k" class="input_buscar" value="" name="Buscar"  />
-					<input style="margin-top:0px; float:left !important;" type="submit" value="" class="searchbutton" />
-				</form>
-				<div class="clear"></div>
-			</div>
-	</div>
-	<div id="canasta_compras" style=" border:0px solid red; float:left; margin-left:100px; margin-top:5px;">
-		<span class="cart-icon"></span>
-			<div style="margin-top:8px; border:0px solid green; float:left;">
-				&nbsp;&nbsp;Mi Carrito&nbsp;
-			</div>
-			<div style="float:right; margin-top:8px;">
-			<span id="cartinfo_qty">[[cartinfo_qty]]</span><span id="cartinfo_items">[[cartinfo_items]]</span><span id="cartinfo_value">[[cartinfo_value]]</span>
-			</div>
-			[[main_shopping_cart_status_display]]
-		
-	</div>
-	<div style="clear:both;"></div>
-</div>
 <!-- END of header carrito, search, groups -->
 
-	
 	[[page_content]]
-	<div style="height:10px;">&nbsp;</div>
-</div>
-<div style="clear:both;"></div>
-<div id="footer">
-	<div id="footer_links" >
-		<div style="float:left; margin-top:42px; margin-left:30px;">
-			<h3>Destacados</h3>
-			<ul >
-				<li><a title="Promociones especiales" href="/g/promociones/">Promociones especiales</a></li>
-				<li><a title="Novedades" href="/g/novedades/">Novedades</a></li>
-				<li><a title="Mejores ventas" href="/g/mas-vendidos/">Los más vendidos</a></li>
-			</ul>
+<!-- Newsletter	 -->
+<section class="grid-container full text-center bg-white">
+	<div class="grid-container">
+		<h4>Mantente al día con tu mascota</h4>
+		<p>E información de promociones, artículos, bienestar y otros más que universo mascotas tiene para tí.</p>
+		<div class="grid-container">
+			<div class="small-12 large-4 large-offset-4 newsletterform">
+			[[formulario(1)]]
+			</div>
 		</div>
-		<div style="float:left; margin-top:42px; margin-left:210px;">
-			<h3>Clientes</h3>
-			<ul >
-				<li><a href="/preguntas-frecuentes/">Preguntas frecuentes</a></li>
-				<li><a href="/servicio-al-cliente/">Servicio al cliente</a></li>
-				<li><a href="/envios-devoluciones/">Envíos y devoluciones</a></li>
-				<li><a href="/terminos/">Términos y condiciones</a></li>
-				<li><a href="/privacidad/">Políticas de privacidad</a></li>
-			</ul>
-		</div>
-		<div style="float:right; margin-top:26px; margin-right:30px;">
-			<img alt="" src="[[cdn_domain]]/css/tetengoelregalo/images/payment-1.jpg" style="margin-right:10px;"></img>
-			<img alt="" src="[[cdn_domain]]/css/tetengoelregalo/images/payment-2.jpg" style="margin-right:10px;"></img>
-			<img alt="" src="[[cdn_domain]]/css/tetengoelregalo/images/payment-3.jpg" style="margin-right:10px;"></img>
-			<img alt="" src="[[cdn_domain]]/css/tetengoelregalo/images/payment-4.jpg" style="margin-right:10px;"></img>
-			<img alt="" src="[[cdn_domain]]/css/tetengoelregalo/images/payment-5.jpg"></img>
-			
-		</div>
-		<div style="clear:both;"></div>
 	</div>
-	<a href="https://www.totalcode.com.co/" target="_blank" rel="noopener noreferrer"><img src="http://cdn.totalcode.com/images/TotalCode-eCommerce.png" width="160" border="0" align="right" alt="TotalCode Software para Comercio Electrónico" title="TotalCode: Software para Comercio Electrónico" style="margin-right: 30px; margin-top: 10px"></a>
-</div>
+</section>
+<!-- footer -->
+	<footer>
+		<div class="grid-container"></div>
+		<div class="grid-container full bg-dark-gray">
+			<div class="grid-container">
+				<div class="grid-x text-center text-white grid-margin-x">
+					<div class="cell small-12 large-3 border-right grid-container grid-y">
+						<div>
+							<h6 class="small-8 small-offset-2 text-center"><a href="/"><img src="[[cdn_url]]/web_content/assets/universomascotas-logo-lughtgray-v2.png" alt="logo Universomascotas.co">Universomascotas.co</a></h6>
+								<h5>Contacto:</h5>
+								<h6><a href="">Quiero vender en universomascotas.co</a></h6>
+								<h6><a href="">Contactarme con un asesor</a></h6>
+								<h6><a href="/servicio-al-cliente/">Servició al cliente</a></h6>
+								<h6><a href="tel:+573112312252">Tél.: (+57) 311 231 22 52.</a></h6>
+						</div>
+					</div>
+					<div class="cell small-12 large-6 large-text-left site-map-um show-for-large">
+						<ul class="no-bullet">
+							<li><h5>Productos</h5></li>
+							<li><h6><a href="/c/perros/adiestramiento/">Adiestramiento</a></h6></li>
+							<li><h6><a href="/c/perros/antiplugas-y-antiparasitarios/">Antipulgas y antiparasitarios</a></h6></li>
+							<li><h6><a href="/c/perros/camas/">Camas</a></li></h6>
+							<li><h6><a href="/c/perros/casas/">Casas</a></li></h6>
+							<li><h6><a href="/c/perros/comida/">Comida</a></h6></li>
+							<li><h6><a href="/c/perros/estetica-y-cuidado/">Estética y Cuidado</a></h6></li>
+							<li><h6><a href="/c/perros/juguetes/">Juguetes</a></li></h6>
+							<li><h6><a href="/c/perros/nutraceuticos/">Nutraceuticos</a></li></h6>
+							<li><h6><a href="/c/perros/otros/">Otros</a></li></h6>
+							<li><h6><a href="/c/perros/ropa/">Ropa</a></h6></li>
+							<li><h6><a href="/c/perros/transporte/">Transporte</a></h6></li>
+						</ul>
+						<ul class="no-bullet">
+							<li><h5>Servicios</h5></li>
+							<li><h6><a href="/c/servicios/perros/chip-de-identificacion/">Chip de identificación</a></h6></li>
+							<li><h6><a href="/c/servicios/perros/consulta-general/">Consulta General</a></h6></li>
+							<li><h6><a href="/c/servicios/perros/esterilizacion/">Esterilización</a></h6></li>
+							<li><h6><a href="/c/servicios/perros/guarderia-y-hoteles/">Guardería y hoteles</a></h6></li>
+							<li><h6><a href="/c/servicios/perros/peluqueria/">Peluquería</a></h6></li>
+							<li><h6><a href="/c/servicios/perros/profilaxis/">Profilaxis</a></h6></li>
+							<li><h6><a href="/c/servicios/perros/toma-de-muestras/">Toma de Muestras</a></h6></li>
+							<li><h6><a href="/c/servicios/perros/vacunacion/">Vacunación</a></h6></li>
+						</ul>
+						<ul class="no-bullet">
+							<li><h5>Comunidad</h5></li>
+							<li><h6><a href="/">Blog</a></h6></li>
+							<li><h6><a href="/">Bienestar</a></h6></li>
+							<li><h6><a href="/">Razas</a></h6></li>
+							<li><h6><a href="/">Eventos</a></h6></li>
+							<li><h5>Acerca de:</h5></li>
+							<li><h6><a href="/">Universomascotas.co</a></h6></li>
+							<li><h6><a href="/">Mapa del Sitio</a></h6></li>
+							<li><h6><a href="/myaccount/">Login</a></h6></li>
+							<li><h6><a href="/">Eventos</a></h6></li>
+						</ul>
+					</div>
+					<div class="cell small-12 large-3 border-left grid-container grid-y">
+						<div>
+							<h5 class="small-8 small-offset-2 text-center">Síguenos en nuestras redes:</h5>
+							<br />
+								<ul class="no-bullet grid-x">
+									<li class="cell small-3 large-auto"><h4><a href=""><i class="fab fa-facebook-square"></i></a></h4></li>
+									<li class="cell small-3 large-auto"><h4><a href=""><i class="fab fa-twitter-square"></i></a></h4></li>
+									<li class="cell small-3 large-auto"><h4><a href=""><i class="fab fa-youtube-square"></i></a></h4></li>
+									<li class="cell small-3 large-auto"><h4><a href=""><i class="fab fa-instagram"></i></a></h4></li>
+								</ul>
+								<h5 class="small-8 small-offset-2 text-center">Ayuda</h5>
+								<h6><a href="/preguntas-frecuentes/">PQR/FAQ</a></h6>
+								<h6><a href="/envios-devoluciones/">Envíos y devoluciones</a></h6>
+								<h6><a href="/privacidad/">Políticas de privacidad</a></h6>
+								<h6><a href="/terminos/">términos & condiciones</a></h6>
+								<h6><a href="">Política de cookies</a></h6>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-container full bg-warning text-center">
+			<h6>© Universo Mascotas. Todos los derechos reservados 2018.</h6>
+		</div>
+		<div class="grid-container full show-for-large">
+			<div class="grid-x">
+			  <div class="cell auto"></div>
+			  <div class="cell large-4"><a href="https://www.totalcode.com.co/" target="_blank" rel="noopener noreferrer"><img src="http://cdn.totalcode.com/images/TotalCode-eCommerce.png" width="160" border="0" align="right" alt="TotalCode Software para Comercio Electrónico" title="TotalCode: Software para Comercio Electrónico"></a></div>
+			</div>
+		</div>
+	</footer>
+<!-- .footer -->
 
-<div class="hidden-phone" id="back-top" style="display: block;"></div>
 
+
+<div class="hidden-phone show-for-large" id="back-top" style="display: block;"><i class="fas fa-caret-up text-white"></i></div>
 
 <div id="new_cust_discount_modal" title="Recibe un descuento" style="display:none; padding:0px">
-	<div id="new_cust_discount_modal_first" style="border:0px solid blue; height:538px;background:url('/css/tetengoelregalo/images/new_cust_discount_modal_first.jpg');background-repeat:no-repeat; display:block;">
+	<div id="new_cust_discount_modal_first" style="border:0px solid blue; height:538px;background:url('/css/universomascotas/images/new_cust_discount_modal_first.jpg');background-repeat:no-repeat; display:block;">
 		<div style="border:0px solid blue; width:40px; height:40px; float:right; cursor:pointer;" onclick='$( "#new_cust_discount_modal" ).dialog( "close" );'></div>
 		<div style="clear:both;"></div>
-		<div style="border:0px solid black; width:250px; float:left; margin-left:195px; margin-top:420px;">
-			<input type="text" name="new_cust_discount_email" id="new_cust_discount_email" placeholder="Escribe aquí tu email" style="width:220px">
-		</div>
+			<div style="border:0px solid black; width:250px; float:left; margin-left:195px; margin-top:420px;">
+				<input type="text" name="new_cust_discount_email" id="new_cust_discount_email" placeholder="Escribe aquí tu email" style="width:220px">
+			</div>
 		<div style="border:0px solid red; float:right; width:270px; height:33px; margin-right:190px; margin-top:416px; cursor:pointer;" onclick="submit_new_cust_discount()"></div>
 		<div style="clear:both;"></div>
 	</div>
-	<div id="new_cust_discount_modal_confirm" style="border:0px solid blue; height:528px;background:url('/css/tetengoelregalo/images/new_cust_discount_modal_confirm.png');background-repeat:no-repeat; display:none;">
+
+	<div id="new_cust_discount_modal_confirm" style="border:0px solid blue; height:528px;background:url('/css/universomascotas/images/new_cust_discount_modal_confirm.png');background-repeat:no-repeat; display:none;">
+
 		<div style="border:0px solid blue; width:40px; height:40px; float:right; cursor:pointer;" onclick='$( "#new_cust_discount_modal" ).dialog( "close" );'></div>
 		<div style="clear:both;"></div>
 		<div style="border:0px solid green; width:456px; height:80px; float:left; margin-top:354px; margin-left:225px; cursor:pointer;" onclick='$( "#new_cust_discount_modal" ).dialog( "close" );'>&nbsp;</div>
 		<div style="clear:both;"></div>
 	</div>
+
 </div>
 <script>
 var modal_width=910;
 var modal_height=550;
 </script>
 <script type="text/javascript" src="[[cdn_domain]]/javascript/new_cust_discount_modal.js"></script>
-
-
 <script>
 $(document).ready(function(){
-
+	// carousel topbar
+	$('.topbarslide').slick({
+		infinite: true,
+		arrows: true,
+		nextArrow: '<i class="fas fa-chevron-right text-white slick-next"></i>',
+		prevArrow: '<i class="fas fa-chevron-left text-white slick-prev"></i>',
+		slidesToShow:8,
+		slidesToScroll: 1,
+		autoplay: true,
+		lazyLoad: 'ondemand',
+		dots: false,
+		speed: 5000,
+		slidesToShow: 1,
+		swipeToSlide:true,
+		focusOnSelect: true,
+		responsive: [
+		    {
+		      breakpoint: 768,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow: 1 
+		      }
+		    },
+		    {
+		      breakpoint: 480,
+		      settings: {
+		        arrows: false,
+		        centerMode: true,
+		        centerPadding: '40px',
+		        slidesToShow:1
+		      }
+		    }
+		  ]
+	});
 	// hide #back-top first
 	$("#back-top").hide();
 	
@@ -253,8 +301,10 @@ $(document).ready(function(){
 		$(window).scroll(function () {
 			if ($(this).scrollTop() > 100) {
 				$('#back-top').fadeIn();
-			} else {
+				$('.scroll-navigation').addClass('fixed-top-nav').fadeIn();
+			} else {	
 				$('#back-top').fadeOut();
+				$('.scroll-navigation').removeClass('fixed-top-nav');
 			}
 		});
 		// scroll body to 0px on click
@@ -265,10 +315,18 @@ $(document).ready(function(){
 			return false;
 		});
 	});
-
 });
+if ( $("#buscar").length ) {
+		$("#buscar").autocomplete({
+			minLength: 3,
+			source : "/search/ajax_suggest.php",
+		}).data("uiAutocomplete")._renderItem = function(ul, item) {
+			return $("<li />")
+			.data("item.autocomplete", item)
+			.append("<a href='"+item.uri+"'><img class='autocomplete_image' src='"+item.icon+"' /><p class='title_autocomplete'>"+item.label+"<p></a>")
+			.appendTo(ul);
+		};
+	}
 </script>
-
-
 </body>
 </html>

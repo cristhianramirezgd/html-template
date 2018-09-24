@@ -1,21 +1,83 @@
-<div style="clear:both; "></div>
-
-<div style="width:1180px; margin:0 auto; border:0px solid green; background:#fff;">
-	<div style="margin-left:40px;">[[product_breadcrumbs]]</div>
-	<div id="content" style="border:0px solid red; width:1100px; margin-left:40px; ">
-		<div style=" border:0px solid green; margin-top:6px; width:860px; float:left;" itemscope itemtype="http://schema.org/Product">
-			[[product_added_cart]]
-			
-			[[product_head]]
-			[[product_description]]
-			[[product_specs]]
-			[[product_reviews]]				
-			[[product_recently_visited]]	
+<!-- PRODUCT HTML -->
+<main class="product-um">
+	<div class="grid-container breadcrumbs-um">
+		[[product_breadcrumbs]]
+	</div>
+	<section class="grid-container full" itemscope itemtype="http://schema.org/Product">
+		<div class="grid-container grid-x bg-white">
+			<div class="small-12 large-6">
+				<div class="small-12">
+					[[product_gallery]]
+					[[product_stock_status]]
+				</div>
+			</div>
+			<div class="small-12 large-6">
+				<div class="grid-container grid-x">
+					[[product_structured_data]]
+					<div class="small-12">
+						[[product_manufacturer_part]]
+					</div>
+					<div class="small-12">
+						<span>[[product_manufacturer_part]]</span>
+						<h1 class="h4 title-product-um">[[product_name]]</h1>
+					</div>
+					<div class="small-12 product-review-um">
+						[[product_review_score]]
+					</div>
+					<div class="small-12 price-product-um">
+							[[product_price_html]]
+					</div>
+					<div class="small-12 shopping-buttom-um">
+						[[product_form]]
+					</div>
+					<div class="small-12 share-social-media-um">
+						[[product_share]]
+					</div>
+					<div class="small-12 link-reviews-um">
+						<a id="reviews-um">Ver comentarios</a>
+					</div>
+				</div>
+			</div>
 		</div>
-		<div style=" border:0px solid green; margin-top:6px; width:230px; float:right;" >
+		<div class="grid-container grid-x">
+			<div class="small-12 large-6">
+				<div class="combo-product">
+					[[product_combo_discounts]]
+				</div>
+				<div class="product-description-um">
+				[[product_description_short]]
+				[[product_description]]
+				</div>
+			</div>
+			<div class="small-12 large-6">
+				[[product_specs]]
+			</div>
+		</div>
+		<div class="grid-container grid-x reviews-um">
+			[[product_reviews]]
+		</div>
+	</section>
+	<section class="grid-container grid-x">
+		<div class="small-12">
+			<h4>Producto relacionado</h4>
 			[[product_related]]
 		</div>
-		<div id="clear"></div>
-	</div>
-	<div style="clear:both;"></div>
-</div>
+		<div class="small-12">
+			<h4>Visitaste recientemente</h4>
+			[[product_recently_visited]]
+		</div>
+		<div class="small-12">
+			<h4>Sugerencias en carrito</h4>
+			[[cart_suggestions]]
+		</div>
+	</section>
+</main>
+<!-- .PRODUCT-UM -->
+<script  type="text/javascript" charset="utf-8" async defer>
+	$("#reviews-um").click(function (){
+      $('html, body').animate({
+          scrollTop: $(".reviews-um").offset().top
+      }, 800);
+      return false;
+  });
+</script>
