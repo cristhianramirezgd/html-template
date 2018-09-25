@@ -11,13 +11,19 @@
 			</div>
 		</div>
 	</section>
-	<section class="grid-container">
-		<div class="small-12 breadcrumbs-um">
-			[[category_breadcrumbs]]
-		</div>
-	</section>
 	<div class="grid-container full">
 		<div class="grid-container">
+			<div class="grid-x align-middle">
+				<div class="cell small-12 large-2 breadcrumbs-um">
+					[[category_breadcrumbs]]
+				</div>
+				<div class="cell large-auto navigation-pages show-for-large">
+						 [[page_nav_grid]]
+				</div>
+				<div class="cell small-12 large-2 order-by-section">
+					[[tpl_sort_by]]
+				</div>
+			</div>
 			<div class="grid-x">
 				<aside class="small-12 large-2">
 					<div class="use-filters">
@@ -39,17 +45,7 @@
 					</div>
 				</aside>
 				<section class="small-12 large-10 group_shield grid-x">
-					<div class="small-12 grid-x show-for-large">
-						<div class="large-8 navigation-pages">
-								 [[page_nav_grid]]
-						</div>
-						<div class="small-12 large-4 order-by-section">
-							[[tpl_sort_by]]
-						</div>
-					</div>
-					<div class="small-12">
-						[[div_with_products]]
-					</div>
+				[[div_with_products]]
 				</section>
 				<div class="grid-container text-center">
 					[[tpl_sales_tax_included]]
