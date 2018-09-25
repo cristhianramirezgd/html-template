@@ -16,14 +16,6 @@
 			[[category_breadcrumbs]]
 		</div>
 	</section>
-	<section class="grid-container grid-x">	
-			<div class="large-8 show-for-large navigation-pages">
-					 [[page_nav_grid]]
-			</div>
-			<div class="small-12 large-4 order-by-section">
-				[[tpl_sort_by]]
-			</div>
-	</section>
 	<div class="grid-container full">
 		<div class="grid-container">
 			<div class="grid-x">
@@ -46,17 +38,27 @@
 						[[precio]]
 					</div>
 				</aside>
-				<section class="small-12 large-10 group_shield">
-					[[div_with_products]]
+				<section class="small-12 large-10 group_shield grid-x">
+					<div class="small-12 grid-x show-for-large">
+						<div class="large-8 navigation-pages">
+								 [[page_nav_grid]]
+						</div>
+						<div class="small-12 large-4 order-by-section">
+							[[tpl_sort_by]]
+						</div>
+					</div>
+					<div class="small-12">
+						[[div_with_products]]
+					</div>
 				</section>
-				<div>
+				<div class="grid-container text-center">
 					[[tpl_sales_tax_included]]
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="grid-container">
-		<div class="small-12 large-offset-6 large-6 navigation-pages">
+		<div class="small-12 navigation-pages last-nav-pages">
 			[[page_nav_grid]]
 		</div>
 	</div>
