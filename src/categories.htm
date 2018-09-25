@@ -18,7 +18,7 @@
 	</section>
 	<section class="grid-container grid-x">	
 			<div class="large-8 show-for-large navigation-pages">
-					[[tpl_page_nav]]
+					 [[page_nav_grid]]
 			</div>
 			<div class="small-12 large-4 order-by-section">
 				[[tpl_sort_by]]
@@ -32,10 +32,14 @@
 						[[tr_spec_filters_on_use]]
 					</div>
 					<div class="sub-categories-filter">
-						[[categorias]]
+						<div class=“title-categoria”>
+						   <h4 class="h6">[[tpl_titulo]]</h4>
+						</div>
+						<div class=“filtros-lista”>
+							[[categorias]]
+						</div>
 					</div>
 					<div class="category-filters">
-						[[tpl_titulo]]
 						[[cat_description]]
 						[[tr_spec_filters_list]]
 						[[tr_spec_filter_js_vars]]
@@ -44,14 +48,16 @@
 				</aside>
 				<section class="small-12 large-10 group_shield">
 					[[div_with_products]]
-					[[tpl_sales_tax_included]]
 				</section>
+				<div>
+					[[tpl_sales_tax_included]]
+				</div>
 			</div>
 		</div>
 	</div>
 	<div class="grid-container">
 		<div class="small-12 large-offset-6 large-6 navigation-pages">
-			[[tpl_page_nav]]
+			[[page_nav_grid]]
 		</div>
 	</div>
 </main>
