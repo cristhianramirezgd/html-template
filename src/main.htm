@@ -101,8 +101,10 @@ function hidetabs(name) {
 									<span id="cartinfo_qty" class="warning badge">[[cartinfo_qty]]</span>
 									<span id="cartinfo_value">[[cartinfo_value]]</span>
 								</div>
-								[[main_shopping_cart_status_display]]
-								[[main_shopping_cart_status_prepare]]
+								<div class="car-view-um">
+									[[main_cart_column]]
+									 <a href="/checkout/viewcart.phtml" class="button alert small expanded text-white">Ir al carro de compras</a>
+								</div>
 						</div>
 					</div>
 				</nav>
@@ -354,6 +356,16 @@ $(document).ready(function(){
 			return false;
 		});
 	});
+	// Ocultar por defecto resumen de carrito
+		$('.car-view-um').css("display", "none");
+		$("#canasta_compras").hover(function(){
+		    $(".car-view-um").fadeIn(400);
+		});
+
+		$("#canasta_compras").mouseleave(function(){
+		    $(".car-view-um").fadeOut(400);
+		});
+
 });
 if ( $("#buscar").length ) {
 		$("#buscar").autocomplete({
