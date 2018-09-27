@@ -1,4 +1,7 @@
-
+<script src="https://cdn.totalcode.com.co/javascript/jquery.range.min.js"></script>
+<style>
+	img.messagehelp {width:35px; cursor:pointer; -webkit-filter: grayscale(100%); filter: grayscale(100%); } .prod_list_filter {display: inline-block; padding: 0 50px; } .prod_list_filter img {vertical-align: middle; padding: 0 3px; } .prod_list_filter span {display: inline-block; vertical-align: middle; } .slider-container {width: 300px; } .slider-container .back-bar {height: 10px; position: relative; } .slider-container .back-bar .selected-bar {position: absolute; height: 100%; } .slider-container .back-bar .pointer {position: absolute; width: 10px; height: 10px; background-color: red; cursor: col-resize; opacity: 1; z-index: 2; } .slider-container .back-bar .pointer.last-active {z-index: 3; } .slider-container .back-bar .pointer-label {position: absolute; top: -17px; font-size: 8px; background: white; white-space: nowrap; line-height: 1; } .slider-container .back-bar .focused {z-index: 10; } .slider-container .clickable-dummy {cursor: pointer; position: absolute; width: 100%; height: 100%; z-index: 1; } .slider-container .scale {top: 2px; position: relative; } .slider-container .scale span {position: absolute; height: 5px; border-left: 1px solid #999; font-size: 0; } .slider-container .scale ins {font-size: 9px; text-decoration: none; position: absolute; left: 0; top: 5px; color: #999; line-height: 1; } .slider-container.slider-readonly .clickable-dummy, .slider-container.slider-readonly .pointer {cursor: auto; } .theme-blue .back-bar {height: 5px; border-radius: 2px; background-color: #eeeeee; background-color: #e7e7e7; background-image: -moz-linear-gradient(top, #eeeeee, #dddddd); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#dddddd)); background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd); background-image: -o-linear-gradient(top, #eeeeee, #dddddd); background-image: linear-gradient(to bottom, #eeeeee, #dddddd); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffdddddd', GradientType=0); } .theme-blue .back-bar .selected-bar {border-radius: 2px; background-color: #0066A7; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffb1d1f9', endColorstr='#ff64a8f9', GradientType=0); } .theme-blue .back-bar .pointer {width: 14px; height: 14px; top: -5px; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; border-radius: 10px; border: 1px solid #AAA; background-color: #e7e7e7; background-image: -moz-linear-gradient(top, #eeeeee, #dddddd); background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#eeeeee), to(#dddddd)); background-image: -webkit-linear-gradient(top, #eeeeee, #dddddd); background-image: -o-linear-gradient(top, #eeeeee, #dddddd); background-image: linear-gradient(to bottom, #eeeeee, #dddddd); background-repeat: repeat-x; filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffeeeeee', endColorstr='#ffdddddd', GradientType=0); } .theme-blue .back-bar .pointer-label {color: #999; } .theme-blue .back-bar .focused {color: #333; } .theme-blue .scale span {border-left: 1px solid #e5e5e5; } .theme-blue .scale ins {color: #999; } .content-f {width: 300px; margin: 0 auto; padding: 30px 0; } .slider-r {display: block; position: relative; height: 36px; width: 100%; -webkit-user-select: none; -moz-user-select: none; -ms-user-select:none; -o-user-select:none; user-select:none; } .slider-touch-left, .slider-touch-right {display: block; position: absolute; height: 20px; width: 20px; z-index: 2; top: 5px; } .slider-touch-left, .slider-touch-right span {display: block; width: 20px; height: 28px; background-image: url(images/range.svg); background-size: 100%; background-repeat: no-repeat; } .slider-line {position: absolute; width: calc(~"100% - 20px"); left: 18px; top: 16px; height: 10px; border-radius: 4px; z-index: 0; overflow: hidden; background-color: #666666; } .slider-line span {display: block; height: 100%; width: 0%; background: rgba(0,89,145,1); background: -moz-linear-gradient(left, rgba(0,89,145,1) 0%, rgba(0,113,188,1) 24%, rgba(0,113,188,1) 77%, rgba(0,89,145,1) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, rgba(0,89,145,1)), color-stop(24%, rgba(0,113,188,1)), color-stop(77%, rgba(0,113,188,1)), color-stop(100%, rgba(0,89,145,1))); background: -webkit-linear-gradient(left, rgba(0,89,145,1) 0%, rgba(0,113,188,1) 24%, rgba(0,113,188,1) 77%, rgba(0,89,145,1) 100%); background: -o-linear-gradient(left, rgba(0,89,145,1) 0%, rgba(0,113,188,1) 24%, rgba(0,113,188,1) 77%, rgba(0,89,145,1) 100%); background: -ms-linear-gradient(left, rgba(0,89,145,1) 0%, rgba(0,113,188,1) 24%, rgba(0,113,188,1) 77%, rgba(0,89,145,1) 100%); background: linear-gradient(to right, rgba(0,89,145,1) 0%, rgba(0,113,188,1) 24%, rgba(0,113,188,1) 77%, rgba(0,89,145,1) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#005991', endColorstr='#005991', GradientType=1 ); }
+</style>
 <main class="category-sales">
 	<section class="grid-container full">
 		<div class="grid-container">
@@ -26,14 +29,11 @@
 			</div>
 			<div class="grid-x">
 				<aside class="small-12 medium-2">
-					<div class="use-filters">
-						[[tr_spec_filters_on_use]]
-					</div>
 					<div class="categories-filter sub-categorie-filter">
-						<div class=“title-categoria”>
-						   <h4 class="h6">[[tpl_titulo]]</h4>
+						<div class="use-filters">
+							[[tr_spec_filters_on_use]]
 						</div>
-						<div class=“filtros-lista”>
+						<div class="filtros-lista">
 							[[categorias]]
 						</div>
 					</div>
@@ -41,8 +41,48 @@
 						[[cat_description]]
 						[[tr_spec_filters_list]]
 						[[tr_spec_filter_js_vars]]
-						[[precio]]
 					</div>
+					 <div class="precio-l">
+			            <div class="title-filtros">
+			              <p>PRECIO</p>
+			            </div>
+			            <div class="content-f">
+			              <div class="prod_list_filter">
+			              	<script type="text/javascript">
+			              		function getParams(param) {
+									var vars = {};
+									window.location.href.replace( location.hash, '' ).replace( 
+										/[?&]+([^=&]+)=?([^&]*)?/gi, // regexp
+										function( m, key, value ) { // callback
+											vars[key] = value !== undefined ? value : '';
+										}
+									);
+
+									if ( param ) {
+										return vars[param] ? vars[param] : null;	
+									}
+									return vars;
+								}
+
+				              	var pf = getParams('pf'), pt = getParams('pt');
+
+				                if (parseInt(pf) >=0 && parseInt(pt) >= 0) {
+									$('.range-slider').val(pf+','+pt);
+								}else{
+									$('.range-slider').val("0,1");
+								}
+			                </script>
+			                <input class="range-slider" type="hidden" value="" />
+			              </div>
+			              <!-- input -->
+			              <div style="display:inline; margin-left:-25px; margin-right:25px;">
+			                <!--- <input type="button" value="Ok" onclick="window.location.href='/r/'+$('.range-slider').val().replace(',','-')" style="background-color: #0066A7; color: white; border: none; cursor: pointer;"> -->
+			                
+			                <input type="button" value="Ok" id="but-filter-price" style="background-color: #0066A7; color: white; border: none; cursor: pointer;">
+			              </div>
+			              <!-- input -->
+			            </div>
+			        </div>
 				</aside>
 				<section class="small-12 medium-10 group_shield grid-x">
 				[[div_with_products]]
@@ -59,3 +99,38 @@
 		</div>
 	</div>
 </main>
+<script>
+    $('.range-slider').jRange({
+      theme: "theme-blue",
+        from: 10000,
+        to: 500000,
+        step: 100000,
+        scale: ['$10 Mil','$100 Mil','$200 Mil','$300 Mil','$400 Mil','$500 Mil'],
+        format: '%s',
+        width: 220,
+        showLabels: true,
+        isRange: true
+    });
+    $('.range-slider').jRange('setValue', '10000,200000');
+
+    $(document).ready(function(){
+      $('.banner-carousel').slick({
+        infinite: true,
+        arrows: true,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        lazyLoad: 'ondemand',
+        dots: true,
+        fade: true,
+        adaptiveHeight: true,
+        cssEase: 'linear',
+      });
+
+      $("#but-filter-price").click(function() {
+      	var valoresFiltroPrecio = $('.range-slider').val().replace(',','-');
+        var resValoresFiltroPrecio = valoresFiltroPrecio.split('-');
+        window.location.href='?pf='+resValoresFiltroPrecio[0]+'&pt='+resValoresFiltroPrecio[1];
+      });
+
+    });
+</script>
