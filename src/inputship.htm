@@ -1,22 +1,26 @@
 
 <main class="inputship-um">
-	<section class="grid-container grid-x">
-		<div class="small-12 medium-6">
-			[[tpl_steps]]
-		</div>
-		<div class="small-12 medium-6">
-			[[tpl_logout]]
+	<section class="grid-container">
+		<div class="grid-x grid-margin-x align-middle grid-padding-y">
+			<div class="cell small-12">
+				[[tpl_logout]]
+			</div>
+			<div class="cell small-12 steps-pay-um">
+				[[tpl_steps]]
+			</div>
 		</div>
 	</section>
-	<section class="grid-container grid-x">
-		<div class="small-12 medium-6">
-			[[tpl_login_box_new_customer]]
-			[[tpl_add_new_ship_address]]
-			[[box1content_main]]
-		</div>
-		<div class="small-12 medium-6">
-			[[tpl_login_box_returning_customers]]
-			[[tpl_cart_column]]
+	<section class="grid-container">
+		<div class="grid-x grid-margin-x align-stretch grid-padding-y wrapper-main-inputship">
+			<div class="cell small-12 medium-6 bg-white">
+				[[tpl_login_box_new_customer]]
+				[[tpl_add_new_ship_address]]
+				[[box1content_main]]
+			</div>
+			<div class="cell small-12 medium-6 bg-white">
+				[[tpl_login_box_returning_customers]]
+				[[tpl_cart_column]]
+			</div>
 		</div>
 	</section>
 </main>
