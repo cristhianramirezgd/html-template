@@ -1,5 +1,5 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta charset="utf-8" />
@@ -21,13 +21,6 @@
 <script type="text/javascript" src="https://cdn.totalcode.com.co/javascript/slick/slick.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <link rel="manifest" href="[[cdn_url]]/web_content/assets/manifest.json">
-<script>
-//variables de dibujar ventana para mostrar shopping cart
-var poner_contenido=1;
-var x=-500;
-var y=-500;
-</script>
-
 [[google_analytics_code]]
 
 <script>
@@ -39,105 +32,61 @@ function hidetabs(name) {
 }
 </script>
 [[head]]
+<!-- Google Tag Manager --> 
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NTVKSVG');</script>
+<!-- End Google Tag Manager -->
 </head>
 
 <body>
-		<!-- header -->
-		<header class="header-um">
-			<div class="grid-container full bg-black">
-				<div class="grid-x text-center">
-							<div class="small-12 medium-4 medium-offset-4 topbarslide">
-								<div><a class="text-white" href=""><small>Envío gratis / Por compras superiores a $100.000</a></small></div>
-								<div><a class="text-white" href=""><small>Invita un amigo, consigue $20.000 pesos</a></small></div>
-								<div><a class="text-white" href=""><small>Envíos a toda Colombia</a></small></div>
-							</div>
+	<!-- Google Tag Manager (noscript) --> 
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTVKSVG"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<!-- header -->
+	<header class="header-um">
+		<div class="grid-container full bg-black">
+			<div class="grid-x text-center">
+				<div class="small-12 medium-4 medium-offset-4 topbarslide">
+					<div><a class="text-white" href=""><small>Envío gratis / Por compras superiores a $100.000</a></small></div>
+					<div><a class="text-white" href=""><small>Invita un amigo, consigue $20.000 pesos</a></small></div>
+					<div><a class="text-white" href=""><small>Envíos a toda Colombia</a></small></div>
 				</div>
-			</div>
-			<div class="grid-container-full bg-medium-gray show-for-medium">
-				<div class="grid-container">
-					<div class="grid-x text-center">
-						<div class="small-12 medium-4">
-							<a class="text-dark-gray" href="">| <small class="small-margin-collapse text-dark-gray"><i class="text-warning fas fa-lock"></i> COMPRA 100% SEGURA</small></a>
-						</div>
-						<div class="small-12 medium-5 medium-offset-3">
-							<a class="text-dark-gray" href=""><small><i class="fas fa-info-circle"></i> ¿COMO COMPRAR?</small> |</a> 
-							<a class="text-dark-gray" href="/myaccount/"><small>QUIERO VENDER</small> |</a>
-							<a class="text-dark-gray" href="https://api.whatsapp.com/send?phone=573112312252" target="_blank"><small><i class="fab fa-whatsapp text-success"></i> SERVICIO AL CLIENTE</small></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="grid-container full bg-white grid-y scroll-navigation">
-				<div class="grid-container small-12">
-					<div class="grid-x text-center grid-padding-x">
-						<div class="small-12 medium-3 logo-um">
-							<a href="/"><img src="[[cdn_domain]]/universomascotas/images/banners/logo_1_es.png" alt="logo Universomascotas.co"></a>
-						</div>
-						<div class="small-12 medium-6 formsearchcontainer grid-x align-middle ">
-							<div class="cell auto">
-								<form id="searchform" class="searchformum" action="/search/" method="get">
-									<input type="text" name="k" class="input_buscar" id="buscar" value="" placeholder="Encuentra productos y servicios para tu mascota" name="Buscar"  />
-									<input type="submit" value="Buscar" class="searchbutton button alert text-white" />
-									<!-- <a href="" class="button alert"><i class=" text-white fas fa-pencil-alt"></i></a> -->
-									<!-- <a href="" class="button alert"><i class=" text-white fas fa-camera"></i></a> -->
-								</form>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</header>
-	<!-- .header -->
-		<script language="Javascript">
-			var poner_grupo=1;
-		</script>
-		<script language="Javascript">
-			var xg, yg;
-			if (poner_grupo) {
-				$("#show-group").bind("mouseover", function(){
-					//alert("show-group mouseover");
-					$("#left_grupos_slide1").css({
-						'display':'block'
-					});
-					poner_grupo=0;
-				});
-				$("#show-group").bind("mouseleave", function(){
-					//alert("contenedor_show_group mouseleave");
-					poner_grupo=1;
-					$("#left_grupos_slide1").css({
-						'display':'none'
-					});
-				});
-		
-			}
-			$("#left_grupos_slide1").mouseover(function(e){
-				//alert (x+' '+y);
-				$("#left_grupos_slide1").css({
-					'display':'block'
-				});
-			})
-			$("#left_grupos_slide1").mouseleave(function(e){
-				poner_grupo=1;
-				$("#left_grupos_slide1").css({
-					'display':'none'
-				});
-			})
-		</script>
-<!-- END of header carrito, search, groups -->
-
-	[[page_content]]
-<!-- Newsletter	 -->
-<section class="grid-container full text-center bg-white">
-	<div class="grid-container">
-		<h4>Mantente al día con tu mascota</h4>
-		<p>E información de promociones, artículos, bienestar y otros más que universo mascotas tiene para tí.</p>
-		<div class="grid-container">
-			<div class="small-12 medium-4 medium-offset-4 newsletterform">
-			[[formulario(1)]]
 			</div>
 		</div>
-	</div>
-</section>
+		<div class="grid-container-full bg-medium-gray show-for-medium">
+			<div class="grid-container sub-top-bar">
+				<div class="grid-x text-center">
+					<div class="small-12 medium-4">
+						<a class="text-dark-gray" href="">| <small class="small-margin-collapse text-dark-gray"><i class="text-warning fas fa-lock"></i> COMPRA 100% SEGURA</small></a>
+					</div>
+					<div class="small-12 medium-5 medium-offset-3">
+						<a class="text-dark-gray" href=""><small><i class="fas fa-info-circle"></i> ¿COMO COMPRAR?</small> |</a> 
+						<a class="text-dark-gray" href="/myaccount/"><small>QUIERO VENDER</small> |</a>
+						<a class="text-dark-gray" href="https://api.whatsapp.com/send?phone=573112312252" target="_blank"><small><i class="fab fa-whatsapp text-success"></i> SERVICIO AL CLIENTE</small></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="grid-container full bg-white grid-y scroll-navigation">
+			<div class="grid-container small-12 small-order-2 medium-order-1">
+				<div class="grid-x text-center grid-padding-x">
+					<div class="small-12 medium-3 logo-um">
+						<a href="/"><img src="[[cdn_domain]]/universomascotas/images/banners/logo_1_es.png" alt="logo Universomascotas.co"></a>
+					</div>
+					<div class="small-12 medium-6 formsearchcontainer grid-x align-middle ">
+						<div class="cell auto"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+<!-- .header -->
+<!-- END of header carrito, search, groups -->
+	[[page_content]]
 <!-- footer -->
 	<footer>
 		<div class="grid-container"></div>
@@ -217,39 +166,15 @@ function hidetabs(name) {
 		<div class="grid-container full bg-warning text-center">
 			<h6>© Universo Mascotas. Todos los derechos reservados 2018.</h6>
 		</div>
-		<div class="grid-container full show-for-medium">
+		<div class="grid-container fluid show-for-medium">
 			<div class="grid-x">
-			  <div class="cell auto"></div>
-			  <div class="cell medium-4"><a href="https://www.totalcode.com.co/" target="_blank" rel="noopener noreferrer"><img src="http://cdn.totalcode.com/images/TotalCode-eCommerce.png" width="160" border="0" align="right" alt="TotalCode Software para Comercio Electrónico" title="TotalCode: Software para Comercio Electrónico"></a></div>
+			  <div><a href="https://www.totalcode.com.co/" target="_blank" rel="noopener noreferrer"><img src="http://cdn.totalcode.com/images/TotalCode-eCommerce.png" width="80" border="0" align="left" alt="TotalCode Software para Comercio Electrónico" title="TotalCode: Software para Comercio Electrónico"></a></div>
 			</div>
 		</div>
 	</footer>
 <!-- .footer -->
-
-
  [[javascript]]
 <div class="hidden-phone show-for-medium" id="back-top" style="display: block;"><i class="fas fa-caret-up text-white"></i></div>
-
-<div id="new_cust_discount_modal" title="Recibe un descuento" style="display:none; padding:0px">
-	<div id="new_cust_discount_modal_first" style="border:0px solid blue; height:538px;background:url('/css/universomascotas/images/new_cust_discount_modal_first.jpg');background-repeat:no-repeat; display:block;">
-		<div style="border:0px solid blue; width:40px; height:40px; float:right; cursor:pointer;" onclick='$( "#new_cust_discount_modal" ).dialog( "close" );'></div>
-		<div style="clear:both;"></div>
-			<div style="border:0px solid black; width:250px; float:left; margin-left:195px; margin-top:420px;">
-				<input type="text" name="new_cust_discount_email" id="new_cust_discount_email" placeholder="Escribe aquí tu email" style="width:220px">
-			</div>
-		<div style="border:0px solid red; float:right; width:270px; height:33px; margin-right:190px; margin-top:416px; cursor:pointer;" onclick="submit_new_cust_discount()"></div>
-		<div style="clear:both;"></div>
-	</div>
-
-	<div id="new_cust_discount_modal_confirm" style="border:0px solid blue; height:528px;background:url('/css/universomascotas/images/new_cust_discount_modal_confirm.png');background-repeat:no-repeat; display:none;">
-
-		<div style="border:0px solid blue; width:40px; height:40px; float:right; cursor:pointer;" onclick='$( "#new_cust_discount_modal" ).dialog( "close" );'></div>
-		<div style="clear:both;"></div>
-		<div style="border:0px solid green; width:456px; height:80px; float:left; margin-top:354px; margin-left:225px; cursor:pointer;" onclick='$( "#new_cust_discount_modal" ).dialog( "close" );'>&nbsp;</div>
-		<div style="clear:both;"></div>
-	</div>
-
-</div>
 <script>
 var modal_width=910;
 var modal_height=550;
@@ -316,17 +241,6 @@ $(document).ready(function(){
 		});
 	});
 });
-if ( $("#buscar").length ) {
-		$("#buscar").autocomplete({
-			minLength: 3,
-			source : "/search/ajax_suggest.php",
-		}).data("uiAutocomplete")._renderItem = function(ul, item) {
-			return $("<li />")
-			.data("item.autocomplete", item)
-			.append("<a href='"+item.uri+"'><img class='autocomplete_image' src='"+item.icon+"' /><p class='title_autocomplete'>"+item.label+"<p></a>")
-			.appendTo(ul);
-		};
-	}
 </script>
 </body>
 </html>
