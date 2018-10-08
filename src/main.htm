@@ -84,7 +84,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<nav class="grid-x text-center navigation-um align-middle">
 					<div class="cell show-for-medium medium-auto vertical-menu-um" id="contenedor_show_group">
 						<a class="button warning text-white" id="show-group"><i class="fas fa-plus"></i> Categorías</a>
-						<div id="left_grupos_slide1" class="category-menu-um" style="display:none;position:absolute;">	
+						<div id="main-mega-menu" class="category-menu-um" style="display:none;position:absolute;">	
 							[[main_category_menu_vert]]
 						</div>
 					</div>
@@ -149,7 +149,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	if (poner_grupo) {
 		$("#show-group").bind("mouseover", function(){
 			//alert("show-group mouseover");
-			$("#left_grupos_slide1").css({
+			$("#main-mega-menu").css({
 				'display':'block'
 			});
 			poner_grupo=0;
@@ -157,21 +157,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		$("#show-group").bind("mouseleave", function(){
 			//alert("contenedor_show_group mouseleave");
 			poner_grupo=1;
-			$("#left_grupos_slide1").css({
+			$("#main-mega-menu").css({
 				'display':'none'
 			});
 		});
 
 	}
-	$("#left_grupos_slide1").mouseover(function(e){
+	$("#main-mega-menu").mouseover(function(e){
 		//alert (x+' '+y);
-		$("#left_grupos_slide1").css({
+		$("#main-mega-menu").css({
 			'display':'block'
 		});
 	})
-	$("#left_grupos_slide1").mouseleave(function(e){
+	$("#main-mega-menu").mouseleave(function(e){
 		poner_grupo=1;
-		$("#left_grupos_slide1").css({
+		$("#main-mega-menu").css({
 			'display':'none'
 		});
 	})
