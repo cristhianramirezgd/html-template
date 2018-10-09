@@ -3,7 +3,7 @@
 	<section class="grid-container full">
 		<div class="grid-container">
 			<div class="grid-x">
-				<div class="small-12 medium-7">
+				<div class="small-12 medium-7 show-for-medium">
 					[[tpl_top_banner_div]]
 				</div>
 				<div class="small-12 medium-5">
@@ -25,7 +25,10 @@
 				</div>
 			</div>
 			<div class="grid-x">
-				<aside class="small-12 medium-2">
+				<div class="small-12 filter-mobile-categories hide-for-medium">
+					<h2 class="h6 text-alert">Filtra tu busqueda por <i class="fas fa-plus"></i></h2>
+				</div>
+				<aside class="small-12 medium-2 filter-mobile-subcategories">
 					<div class="categories-filter sub-categorie-filter">
 						<div class="use-filters">
 							[[tr_spec_filters_on_use]]
@@ -91,5 +94,16 @@
         window.location.href='?pf='+resValoresFiltroPrecio[0]+'&pt='+resValoresFiltroPrecio[1];
       });
 
+    });
+    $(window).on("load resize",function(e){
+      if ($(window).width() <= 640){
+        $( '.filter-mobile-categories' ).click(function() {
+          $( '.filter-mobile-subcategories' ).toggle( "fold", 1000 );
+        });
+      } else {
+        $( '.filter-mobile-categories' ).click(function() {
+          $( '.filter-mobile-subcategories' ).toggle();
+        });
+      }
     });
 </script>
