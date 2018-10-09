@@ -395,6 +395,9 @@ $(document).ready(function(){
 		});
 
 });
+$(window).on("load",function(e){
+	$('.formsearchcontainer .searchformum .input_buscar').focus();
+});
 $(window).on("load resize",function(e){
   if ($(window).width() <= 640){
     $( '.hamburguer-icon-um' ).click(function() {
