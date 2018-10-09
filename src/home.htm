@@ -8,7 +8,7 @@
   <section class="grid-container full">
   	<div class="grid-container" id="maincontent">
       <div class="small-12 top-brand-title">
-        <h2 class="h4"><i class="fas fa-certificate"></i> Marcas top</h2>
+        <h2 class="h6 text-alert"><i class="fas fa-certificate"></i> Marcas top</h2>
       </div>
       <div class="small-12 top-brand-carousel">
   		  [[carrousel(3)]]
@@ -16,14 +16,17 @@
   	</div>
   </section>
   <section class="grid-container grid-x align-middle banner-one">
-    <div class="small-12 medium-4">
+    <div class="small-12 medium-4 show-for-medium">
       [[carrousel(1)]]
+    </div>
+    <div class="small-12 medium-4 hide-for-medium">
+      [[carrousel(4)]]
     </div>
     <div class="group-home small-12 medium-8">
       [[grupo(7|6|3)]]
     </div>
   </section>
-  <section class="grid-container full grid-x circle-button">
+  <section class="grid-container full grid-x circle-button show-for-medium">
     <div class="banner-home-middle">
       [[home_banners_small]]
     </div>
@@ -34,14 +37,17 @@
     </div>
   </section>
   <section class="grid-container grid-x align-middle banner-two">
-    <div class="small-12 medium-4">
+    <div class="small-12 medium-4 show-for-medium">
       [[carrousel(2)]]
+    </div>
+    <div class="small-12 medium-4 hide-for-medium">
+      [[carrousel(5)]]
     </div>
     <div class="group-home small-12 medium-8">
       [[grupo(8|6|3)]]
     </div>
   </section>
-  <section>
+  <!-- <section class="">
     <div class="grid-container grid-x">
       <div class="small-12">
         <h4 class="text-center">Bienestar para tu mascotas</h4>
@@ -49,7 +55,7 @@
       </div>
       <article class="small-12"></article>
     </div>
-  </section>
+  </section> -->
 </main>    
 <script type="text/javascript">
   $('#carrousel_3').slick({
