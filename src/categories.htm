@@ -12,7 +12,7 @@
 							<div class="cell medium-3 day-ofert">
 								<h2 class="h5">Oferta del Día</h2>
 							</div>
-							<div class="cell medium-9">
+							<div class="cell medium-9 slide-product-full">
 								[[grupo(9|2|2)]]
 							</div>
 						</div>
@@ -98,13 +98,14 @@
     $('.range-slider').jRange('setValue', '10000,200000');
 
     $(document).ready(function(){
+    	$('.slide-product-full div').removeClass('container_div')
       $("#but-filter-price").click(function() {
       	var valoresFiltroPrecio = $('.range-slider').val().replace(',','-');
         var resValoresFiltroPrecio = valoresFiltroPrecio.split('-');
         window.location.href='?pf='+resValoresFiltroPrecio[0]+'&pt='+resValoresFiltroPrecio[1];
       });
       	// carousel topbar
-      	$('.product-slide .container_div').slick({
+      	$('.slide-product-full > div').slick({
       		infinite: true,
       		arrows: false,
       		slidesToShow:1,
