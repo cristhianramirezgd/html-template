@@ -1,19 +1,26 @@
-
-<div style="width:1180px; margin:0 auto; border:0px solid green; background:#fff;">
-
-	<div id="maincontent" style=" width:1100px; margin-left:40px;">
-		<div style="margin-top:6px; margin-bottom:6px;" >
-			[[tpl_steps]]
-			<div class="clear"></div>
-			[[tpl_logout]]
-			<div id="inputship_left" style="border:0px solid red; float:left; width:540px; margin-left:0px; ">
-				[[error_message]]
+<main class="input-pay-um error-page" id="maincontent">
+	<section class="grid-container">
+		<div class="grid-x grid-margin-x align-middle grid-padding-y">
+			<div class="cell small-12">
+				[[tpl_logout]]
 			</div>
-			<div id="inputship_right" style="border:0px solid blue;float:right; width:460px; margin-right:0px;">
-				[[tpl_cart_column]]
-			</div>			
+			<div class="cell small-12 steps-pay-um">
+				[[tpl_steps]]
+			</div>
 		</div>
-		<div id="clear"></div>
-	</div>
-	<div class="clear"></div>
-</div>
+	</section>
+	<section class="maincontent wrapper-inputpay-um grid-container bg-white">
+		<div class="grid-x grid-margin-x grid-padding-y">
+			<div class="cell small-12 medium-9">
+				<div class="grid-x grid-margin-x">
+					<div class="cell small-12">
+						[[error_message]]
+					</div>
+					<div class="cell small-12 pay-method-um">
+						[[tpl_cart_column]]
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
