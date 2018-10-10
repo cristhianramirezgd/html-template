@@ -3,11 +3,21 @@
 <main class="category-sales groups-result-layout">
 	<section class="grid-container full">
 		<div class="grid-container">
-			<div class="grid-x">
-				<div class="small-12 medium-7">
+			<div class="grid-x grid-margin-x align-middle">
+				<div class="cell small-12 medium-7 show-for-medium">
 					[[tpl_top_banner_div]]
 				</div>
-				<div class="small-12 medium-5">
+				<div class="cell small-12 medium-5">
+					<!-- <div class="grid-container">
+						<div class="category-promo grid-x strench product-slide">
+							<div class="cell medium-3 day-ofert">
+								<h2 class="h5">Oferta del Día</h2>
+							</div>
+							<div class="cell medium-9 slide-product-full">
+								[[grupo(9|2|2)]]
+							</div>
+						</div>
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -25,7 +35,10 @@
 				</div>
 			</div>
 			<div class="grid-x">
-				<aside class="small-12 medium-2">
+				<div class="small-12 filter-mobile-categories hide-for-medium">
+					<h2 class="h6 text-alert">Filtra tu busqueda por <i class="fas fa-plus"></i></h2>
+				</div>
+				<aside class="small-12 medium-2 filter-mobile-subcategories">
 					<div class="categories-filter sub-categorie-filter">
 						<div class="use-filters">
 						</div>
@@ -81,11 +94,36 @@
     $('.range-slider').jRange('setValue', '10000,200000');
 
     $(document).ready(function(){
+    	$('.slide-product-full div').removeClass('container_div')
       $("#but-filter-price").click(function() {
       	var valoresFiltroPrecio = $('.range-slider').val().replace(',','-');
         var resValoresFiltroPrecio = valoresFiltroPrecio.split('-');
         window.location.href='?pf='+resValoresFiltroPrecio[0]+'&pt='+resValoresFiltroPrecio[1];
       });
-
+      	// carousel topbar
+      	$('.slide-product-full > div').slick({
+      		infinite: true,
+      		arrows: false,
+      		slidesToShow:1,
+      		slidesToScroll: 1,
+      		autoplay: true,
+      		lazyLoad: 'ondemand',
+      		dots: false,
+      		speed: 5000,
+      		slidesToShow: 1,
+      		swipeToSlide:true,
+      		focusOnSelect: true
+      	});
+    });
+    $(window).on("load resize",function(e){
+      if ($(window).width() <= 640){
+        $( '.filter-mobile-categories' ).click(function() {
+          $( '.filter-mobile-subcategories' ).toggle( "fold", 1000 );
+        });
+      } else {
+        $( '.filter-mobile-categories' ).click(function() {
+          $( '.filter-mobile-subcategories' ).toggle();
+        });
+      }
     });
 </script>
