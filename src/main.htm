@@ -400,13 +400,19 @@ $(window).on("load",function(e){
 });
 $(window).on("load resize",function(e){
   if ($(window).width() <= 640){
-    $( '.hamburguer-icon-um' ).click(function() {
-      $( '.navigation-um' ).toggle( "fold", 1000 );
+    // MENU RESPONSIVE
+    var accion ="dentro";
+    $(".hamburguer-icon-um").click(function(){
+    	 if (accion == "dentro"){
+    		$(".navigation-um").css("display","block");
+    		accion = "fuera";
+    	 }
+    	 else{
+    		$(".navigation-um").css("display","none");
+    		accion = "dentro";
+    	 }
     });
-  } else {
-    $( '.hamburguer-icon-um' ).click(function() {
-      $( '.navigation-um' ).toggle();
-    });
+    // MENU RESPONSIVE FIN
   }
 });
 if ( $("#buscar").length ) {
