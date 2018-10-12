@@ -93,7 +93,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			<div class="grid-container small-12 bg-white small-order-1 medium-order-2">
 				<div class="hide-for-medium">
 					<div class="container-grid">
-						<div class="grid-x grid-margin-x grid-padding-y align-strench">
+						<div class="grid-x grid-padding-y align-strench">
 							<div class="cell small-10 logo-um-mobile"><a href="/"><img src="[[cdn_url]]/web_content/assets/logo-mobile-universomascotas.jpg" alt="universomascotas mobile logo"></a></div>
 							<div class="cell small-2 hamburguer-icon-um bg-warning text-white text-center"><i class="fas fa-bars"></i></div>
 						</div>
@@ -152,6 +152,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 								<!-- <a href="" class="button alert"><i class=" text-white fas fa-pencil-alt"></i></a> -->
 								<!-- <a href="" class="button alert"><i class=" text-white fas fa-camera"></i></a> -->
 							</form>
+						</div>
+						<div class="car-mobile hide-for-medium">
+							<div class="car-info-mobile text-white" id="car-info-mobile-um"></div>
 						</div>
 					</div>
 				</div>
@@ -413,6 +416,12 @@ $(window).on("load resize",function(e){
     	 }
     });
     // MENU RESPONSIVE FIN
+    //CAR MOBILE
+    $(".um-car-icon").appendTo( "#car-info-mobile-um" );
+    $(".um-car-icon").on('click', function(){
+         window.location = "https://www.universomascotas.co/checkout/viewcart.phtml";    
+    });
+    //CAR MOBILE FIN
   }
 });
 if ( $("#buscar").length ) {
