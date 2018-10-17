@@ -4,7 +4,7 @@ const htmlmin = require('gulp-htmlmin');
  
 gulp.task('zip_code', () =>
     gulp.src('src/*.htm')
-    	.pipe(htmlmin({ collapseWhitespace: true }))
+    	// .pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(zip('um.zip'))
         .pipe(gulp.dest('dist'))
 );
