@@ -209,21 +209,21 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	</div>
 	<div class="grid-x">
 		<div class="small-12 medium-8 medium-offset-2 bg-white">
-			<ul class="pay-carousel">
-				<li><img src="[[cdn_url]]/web_content/assets/payu-universomascotas.png" alt="PayU universomascotas" /></li>
+			<div class="pay-carousel grid-x grid-margin-x align-middle">
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/payu-universomascotas.png" alt="PayU universomascotas" /></div>
 				<!-- <li><img src="[[cdn_url]]/web_content/assets/AmericanExpress-PayU-universomascotas.png" alt="AmericanExpress-PayU" /></li> -->
 				<!-- <li><img src="[[cdn_url]]/web_content/assets/bancobog-universomascotas.png" alt="bancobog" /></li> -->
 				<!-- <li><img src="[[cdn_url]]/web_content/assets/bancolombia-1-universomascotas.png" alt="bancolombia-1" /></li> -->
-				<li><img src="[[cdn_url]]/web_content/assets/codensa-1-universomascotas.png" alt="codensa-1" /></li>
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/codensa-1-universomascotas.png" alt="codensa-1" /></div>
 				<!-- <li><img src="[[cdn_url]]/web_content/assets/davivienda-1-universomascotas.png" alt="davivienda-1" /></li> -->
-				<li><img src="[[cdn_url]]/web_content/assets/DinersClub-PayU-universomascotas.png" alt="DinersClub-PayU" /></li>
-				<li><img src="[[cdn_url]]/web_content/assets/efecty-1-universomascotas.png" alt="efecty-1" /></li>
-				<li><img src="[[cdn_url]]/web_content/assets/Master-PayU-universomascotas.png" alt="Master-PayU" /></li>
-				<li><img src="[[cdn_url]]/web_content/assets/PSE-universomascotas.png" alt="PSE" /></li>
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/DinersClub-PayU-universomascotas.png" alt="DinersClub-PayU" /></div>
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/efecty-1-universomascotas.png" alt="efecty-1" /></div>
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/Master-PayU-universomascotas.png" alt="Master-PayU" /></div>
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/PSE-universomascotas.png" alt="PSE" /></div>
 				<!-- <li><img src="[[cdn_url]]/web_content/assets/sured-universomascotas.png" alt="sured" /></li> -->
-				<li><img src="[[cdn_url]]/web_content/assets/viabaloto-universomascotas.png" alt="viabaloto" /></li>
-				<li><img src="[[cdn_url]]/web_content/assets/Visa-PayU-universomascotas.png" alt="Visa-PayU" /></li>
-			</ul>
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/viabaloto-universomascotas.png" alt="viabaloto" /></div>
+				<div class="cell auto"><img src="[[cdn_url]]/web_content/assets/Visa-PayU-universomascotas.png" alt="Visa-PayU" /></div>
+			</div>
 		</div>
 	</div>
 </section>
@@ -298,12 +298,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 						<div>
 							<h5 class="small-8 small-offset-2 text-center">Síguenos en nuestras redes:</h5>
 							<br />
-								<ul class="no-bullet grid-x">
-									<li class="cell small-3 medium-auto"><h4><a href="https://www.facebook.com/universoymascotas"><i class="fab fa-facebook-square"></i></a></h4></li>
-									<li class="cell small-3 medium-auto"><h4><a href="https://twitter.com/universomascota"><i class="fab fa-twitter-square"></i></a></h4></li>
-									<li class="cell small-3 medium-auto"><h4><a href="https://www.youtube.com/user/universomascotas2014"><i class="fab fa-youtube-square"></i></a></h4></li>
-									<li class="cell small-3 medium-auto"><h4><a href="https://www.instagram.com/universomascota/"><i class="fab fa-instagram"></i></a></h4></li>
-								</ul>
+								<div class="grid-x align-center">
+									<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+									<div class="addthis_inline_follow_toolbox" id="gz5j"></div>
+									<!-- .Go to www.addthis.com/dashboard to customize your tools --> 
+								</div>
 								<h5 class="small-8 small-offset-2 text-center">Ayuda</h5>
 								<!-- <h6><a href="/preguntas-frecuentes/">PQR/FAQ</a></h6> -->
 								<h6><a href="/link_de_interes/quienes_somos/">¿Quiénes somos?</a></h6>
@@ -353,6 +352,9 @@ var modal_width=910;
 var modal_height=550;
 </script>
 <script type="text/javascript" src="[[cdn_domain]]/javascript/new_cust_discount_modal.js"></script>
+<!-- Go to www.addthis.com/dashboard to customize your tools --> 
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bcf636650828bfe"></script>
+<!-- /Go to www.addthis.com/dashboard to customize your tools --> 
 <script>
 $(document).ready(function(){
 	// carousel topbar
@@ -387,45 +389,6 @@ $(document).ready(function(){
 		        centerMode: true,
 		        centerPadding: '40px',
 		        slidesToShow:1
-		      }
-		    }
-		  ]
-	});
-	$('.pay-carousel').slick({
-		infinite: true,
-		arrows: true,
-		nextArrow: '<i class="fas fa-chevron-right text-dark-gray slick-next"></i>',
-		prevArrow: '<i class="fas fa-chevron-left text-dark-gray slick-prev"></i>',
-		slidesToScroll: 1,
-		autoplay: true,
-		lazyLoad: 'ondemand',
-		dots: false,
-		draggable:true,
-		speed: 8000,
-		centerPadding: '1rem',
-		centerMode: true,
-		slidesToShow: 8,
-		swipeToSlide:true,
-		focusOnSelect: true,
-		responsive: [
-		    {
-		      breakpoint: 768,
-		      settings: {
-				variableWidth: false,
-		        arrows: false,
-		        centerMode: true,
-		        centerPadding: '40px',
-		        slidesToShow: 3
-		      }
-		    },
-		    {
-		      breakpoint: 480,
-		      settings: {
-				variableWidth: false,
-		        arrows: false,
-		        centerMode: true,
-		        centerPadding: '40px',
-		        slidesToShow:2
 		      }
 		    }
 		  ]
@@ -501,5 +464,23 @@ if ( $("#buscar").length ) {
 		};
 	}
 </script>
+<!-- Load Facebook SDK for JavaScript -->
+<!-- <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> -->
+
+<!-- Your customer chat code -->
+<!-- <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="554335914647322"
+  theme_color="#ff7e29"
+  logged_in_greeting="Hola, ¿puedo ayudarte?"
+  logged_out_greeting="Hola, ¿puedo ayudarte?">
+</div> -->
 </body>
 </html>
