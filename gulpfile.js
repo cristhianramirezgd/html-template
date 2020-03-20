@@ -4,10 +4,12 @@ const htmlmin = require('gulp-htmlmin');
  
 gulp.task('zip_code', () =>
     gulp.src('src/*.htm')
-    	// .pipe(htmlmin({ collapseWhitespace: true }))
+    	.pipe(htmlmin({ collapseWhitespace: true }))
         .pipe(zip('um.zip'))
         .pipe(gulp.dest('dist'))
 );
-gulp.task('default', ['zip_code'], function() {
-    gulp.watch(['src/*.htm'], ['zip_code']);
+gulp.task('watch', () => {
+    gulp.watch('src/*.htm', gulp.series ('zip_code'));
 });
+
+gulp.task('default', gulp.parallel('zip_code'));
