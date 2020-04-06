@@ -8,8 +8,7 @@ gulp.task('zip_code', () =>
         .pipe(zip('um.zip'))
         .pipe(gulp.dest('dist'))
 );
-gulp.task('watch', () => {
+gulp.task('default', () => {
     gulp.watch('src/*.htm', gulp.series ('zip_code'));
 });
 
-gulp.task('default', gulp.parallel('zip_code'));

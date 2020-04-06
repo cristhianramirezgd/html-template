@@ -4,6 +4,7 @@
   "description": "template html for total-code-platform",
   "main": "index.js",
   "scripts": {
+    "gulp":"gulp watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
