@@ -69,6 +69,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<div id="container-popup">
 		[[indicador_ciudad_banners]]
 	</div>
+	
 	<!-- header -->
 	<div class="check-add-to-card">
 		<svg width="100" height="100" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -274,7 +275,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	[[page_content]]
 <!-- Newsletter	 -->
 <p id="loading" style="text-align:center; display: none">
-	<img src="https://cdn.totalcode.com/images/ajax-loader.gif">
+	<svg id="loader-um" width="50" height="50" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<circle class="path" cx="81" cy="81" r="75" stroke-width="11"/>
+	</svg>
 </p>
 
 	<!-- footer -->
@@ -441,7 +444,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			type: "POST",
 			  url: "/ajax/accept_national_ip.phtml",
 			  success: function(data) {
-				  //recarga pagina para despaparecer el mensaje
+				  //recarga pagina para despaparecer el mensajecd ..
 				  window.location.reload();
 			  }
 		});

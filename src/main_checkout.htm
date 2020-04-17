@@ -66,73 +66,28 @@
 	js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.0";
 	fjs.parentNode.insertBefore(js, fjs);
 	}(document, 'script', 'facebook-jssdk'));</script>
-	<div id="container-popup">
-		[[indicador_ciudad_banners]]
-	</div>
 	<!-- header -->
-	<header class="um-header grid-container fluid">
-		<div class="um-searcher grid-container grid-x align-center-middle">
-		  <div class="cell medium-2 show-for-medium medium-order-1">
-			<a href="/" class="logo-um"><img src="https://cdn.totalcode.com.co/universomascotas/web_content/assets/logo-universomascotas.png" alt="universomascotas.com" /></a>
+	<header class="um-header grid-container fluid" style="border-bottom:1px solid #ededed;">
+		<div class="um-searcher grid-container grid-x">
+		  <div class="cell medium-2 show-for-medium">
+			<a href="/" class="logo-um">
+				<img src="https://cdn.totalcode.com.co/universomascotas/web_content/assets/logo-universomascotas.png" alt="universomascotas.com" />
+			</a>
 		  </div>
-		  <div class="cell medium-6 small-order-2 medium-order-2 formsearchcontainer grid-x align-middle">
-			[[main_search]]
-		  </div>
-		  <div class="mobileBar cell medium-4 small-order-1 medium-order-3 grid-x align-center-middle">
-			<div class="cell shrink whatsapp cm show-for-medium">
-			  <a class="text-dark-gray tel-animation" href="https://api.whatsapp.com/send?phone=573232220389" target="_blank"><i class="whatsapp-um icon-um"></i></a>
+		  <div class="cell auto logo-mobile cm hide-for-medium">
+			 	<a href="/" class="logo-um">
+					<img src="[[cdn_url]]/web_content/assets/logo-universomascota-mobile.png" alt="universomascotas.com" />
+				</a>
 			</div>
-			<div class="cell auto logo-mobile cm hide-for-medium">
-				<a href="/" class="logo-um"><img src="[[cdn_url]]/web_content/assets/logo-universomascota-mobile.png" alt="universomascotas.com" /></a>
-			  </div>
-			<div class="cell auto localization cm">
-				<a class="text-dark-gray"><img width="15" src="[[cdn_url]]/web_content/assets/mapas-y-banderas.png" class="lazy-load" alt="location" /><small data-location="location"></small></a>
-			  <!-- <div>
-				[[modal_address_coord]]
-			  </div> -->
-			</div>
-			<div class="cell auto shrink login cm show-for-medium">
-			  <a href="/myaccount/">
-				<i class="user-g-um icon-um"></i>
-			  </a>
-			</div>
-			<div class="cell auto shoppingcart cm" id="contenedor_show_group">
-			  <div id="canasta_compras" class="my-cart-mobile">
-				  <div class="um-car-icon">
-					<div class="car-icon-wrapper">
-						<span class="cart-icon h4"><i class="shopping-car-um icon-um"></i></span>
-					<span id="cartinfo_qty" class="warning badge">[[cartinfo_qty]]</span>
-					</div>
-					<span id="cartinfo_value" class="show-for-medium">[[cartinfo_value]]</span>
-				  </div>
-				  <div class="car-view-um">
-					[[main_cart_column]]
-					 <a href="/checkout/viewcart.phtml" class="">Ir al carro de compras</a>
-				  </div>
-			  </div>
-			</div>
-		  </div>
 		</div>
-		<section id="flagPromotion" class="grid-container full flag-promotion">
-			<div class="grid-container grid-x align-center-middle text-center bg-pdp-alert half-padding-vertical  margin-bottom">
-			  <div class="cell auto grid-container grid-x align-center-middle flag-promotion-container">
-			  <a href="">
-				<h5 class="no-margin font-bold"><i class="paw-seal-w-um icon-um"></i>Suscríbete y disfruta los beneficios de ser cliente GOLD</h5>
-			  </a>
-			</div>
-			<div class="cell shrink">
-			  <em class="btn close-flag">x</em>
-			  </div>
-			</div>
-		</section>
 	</header>
-
-	
 	[[page_content]]
-	<!-- Newsletter	 -->
-<p id="loading" style="text-align:center; display: none">
-	<img src="https://cdn.totalcode.com/images/ajax-loader.gif">
-</p>
+	
+	<p id="loading" style="text-align:center; display: none">
+		<svg id="loader-um" width="50" height="50" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
+			<circle class="path" cx="81" cy="81" r="75" stroke-width="11"/>
+		</svg>
+	</p>
 
 	<!-- footer -->
 	<footer class="footer-um-pdp">
@@ -142,18 +97,6 @@
 			</div>
 			<div class="cell small-12 medium-6">
 				[[carrousel(28)]]
-			</div>
-		</section>
-		<section class="footer-title-section grid-container full bg-pdp-warning">
-			<div class="grid-container grid-x align-center-middle">
-				<h3 class="h4">Mantente al día con tu mascota</h3>
-			</div>
-		</section>
-		<section class="grid-container full newsletterform">
-			<div class="grid-container grid-x">
-				<div class="cell small-12 newsletterform-wrapper">
-				[[formulario(1)]]
-				</div>
 			</div>
 		</section>
 		<section class="grid-container full footer-nav">
@@ -170,12 +113,6 @@
 				   </div>
 				   <div class="company-mail">
 					   <a class="color-white" href="mailto:Servicioalcliente@universomascotas.co">Servicioalcliente@universomascotas.co</a>
-					</div>
-					<div class="um-social-media">
-						<p class="color-white">Síguenos en</p>
-						<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-						<div class="addthis_inline_follow_toolbox" id="gz5j"></div>
-						<!-- .Go to www.addthis.com/dashboard to customize your tools --> 
 					</div>
 				</div>
 				<div class="cell small-12 medium-4 medium-offset-1 um-ours">
@@ -210,107 +147,7 @@
 	</footer>
 	<!-- .footer -->
 	[[javascript]]
-	<div class="hidden-phone show-for-medium" id="back-top" style="display: block;"><i class="fas fa-caret-up text-white"></i></div>
-	<script>
-		var modal_width=910;
-		var modal_height=550;
-	</script>
-	<script type="text/javascript" src="[[cdn_domain]]/javascript/new_cust_discount_modal.js"></script>
-	<!-- Go to www.addthis.com/dashboard to customize your tools --> 
-	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5bcf636650828bfe"></script>
-	<!-- /Go to www.addthis.com/dashboard to customize your tools --> 
 	<script type="text/javascript" src="[[cdn_url]]/web_content/assets/app.js"></script>
 <!-- location -->
-<script>
-
-	function updateStateCities(evt) {
-		let deferred = $.Deferred();
-		var estado_buscar=$("#estados_ip option:selected").val();
-		$.ajax({
-			type: "POST",
-				url: "/ajax/list_all_cities.phtml",
-				data: { "state":estado_buscar,"country":"CO"},
-				success: function(data) {
-					//crea el nuevo select
-					myObj = JSON.parse(data);
-					var opciones="";
-					for (var i in myObj) {
-						//alert (i+" : "+myObj[i]);
-						opciones+="<option value=\""+i+"\">"+myObj[i]+"</option>";
-					}
-					$("#ciudades_ip").html(opciones);
-					deferred.resolve();
-				}
-		});
-		return deferred;
-	}
-
-	$("#estados_ip").bind("change", updateStateCities);
-	$("#ip_aceptar_cambio").bind("click",function() {
-			var estado_sel=$("#estados_ip option:selected").val();
-			var ciudad_sel=$("#ciudades_ip option:selected").val();
-			$.ajax({
-				type: "POST",
-					url: "/ajax/accept_national_ip.phtml",
-					data: { "state":estado_sel,"city":ciudad_sel},
-					success: function(data) {
-						//recarga pagina para despaparecer el mensaje
-						window.location.reload();
-					}
-			});
-
-	})
-	$("#ip_nacional").bind("click",function() {
-		$.ajax({
-			type: "POST",
-			  url: "/ajax/accept_national_ip.phtml",
-			  data: { "change_national":"1" },
-			  success: function(data) {
-				  //recarga pagina para cargar las nuevas banners
-				  window.location.reload();
-			  }
-		});
-
-	})
-	$("#ip_aceptar").bind("click",function() {
-		$.ajax({
-			type: "POST",
-			  url: "/ajax/accept_national_ip.phtml",
-			  success: function(data) {
-				  //recarga pagina para despaparecer el mensaje
-				  window.location.reload();
-			  }
-		});
-
-	})
-</script>
-
-	<!-- Global site icommktpush (icommktpush.js) - ICOMMKT Push -- v2.0 -->
-	<script>
-		(function (j, l, p, v, n, t, pu) {
-			j['_WPN'] = n;
-			j[n] = j[n] || function () {
-					(j[n].q = j[n].q || []).push(arguments)
-				}, j[n].l = 1 * new Date();
-			t = l.createElement(p),
-				pu = l.getElementsByTagName(p)[0];
-			t.async = 1;
-			t.src = v;
-			pu.parentNode.insertBefore(t, pu);
-		})(window, document, 'script', 'https://d12zyq17vm1xwx.cloudfront.net/v2/wpn.min.js', 'wpn');
-		
-		wpn('initialize', 2862, 'notifications-icommkt.com', 'track-icommkt.com');
-		wpn('checkSubscription');
-		wpn('pageView');
-	</script>
-
-	<!-- PadiAct Code -->
-	<script type="text/javascript">
-	(function() {
-	var pa = document.createElement('script'), ae = document.getElementsByTagName('script')[0]
-	, protocol = (('https:' == document.location.protocol) ? 'https://' : 'http://');pa.async = true;  
-	pa.src = protocol + 'd2xgf76oeu9pbh.cloudfront.net/ec2a99ad88f239d66e7348fe9ae377fb.js'; pa.type = 'text/javascript'; ae.parentNode.insertBefore(pa, ae);
-	})();
-	</script>
 </body>
 </html>
