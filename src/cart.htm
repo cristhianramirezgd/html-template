@@ -4,4 +4,54 @@
 			[[box1content]]
 		</div>
 	</section>
+	<section class="grid-container grid-x grid-padding-y align-center">
+		<div class="cell small-10 medium-12 product-carousel-home">
+		  [[group(8,5,,DT)]]
+		</div>
+	  </section>
 </main>
+<script>
+	(()=>{
+	    $(document).ready(function(){
+        $(this).scrollTop(0);
+        $('.button_prod_add').on('click', function(){
+          setTimeout(function(){
+            location.reload();
+          },200)
+        });
+        let rigthArrowSlick = 'icon-um  arrow-r-o-um slick-next' ;
+        let leftArrowSlick = 'icon-um  arrow-l-o-um slick-prev' ;
+        let paddingGlobal = '40px';
+        let globalSpeed = 7000 ;
+        let mainBreackpoint = 480 ;
+        $('.product-carousel').slick({
+          infinite: true,
+            arrows: true,
+            nextArrow: `<i class=" ${ rigthArrowSlick } "></i>`,
+            prevArrow: `<i class=" ${ leftArrowSlick } "></i>`,
+            slidesToShow:5,
+            slidesToScroll: 1,
+            autoplay: false,
+            autoplaySpeed: globalSpeed,
+            lazyLoad: 'ondemand',
+            dots: false,
+            adaptiveHeight: false,
+            responsive: [
+                {
+                  breakpoint: mainBreackpoint,
+                  settings: {
+                    infinite: true,
+                    arrows: true,
+                    centerMode: false,
+                    centerPadding: paddingGlobal,
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                    adaptiveHeight: false
+                  }
+                }
+              ]
+        });
+      });
+  })();
+
+</script>
