@@ -58,6 +58,10 @@
 </head>
 
 <body>
+	<!-- Google Tag Manager (noscript) --> 
+	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NTVKSVG"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<!-- End Google Tag Manager (noscript) -->
 	<div id="fb-root"></div>
 	<script>(function(d, s, id) {
 	var js, fjs = d.getElementsByTagName(s)[0];
@@ -148,6 +152,35 @@
 	<!-- .footer -->
 	[[javascript]]
 	<script type="text/javascript" src="[[cdn_url]]/web_content/assets/app.js"></script>
-<!-- location -->
+<script>
+	$("#ccid").unbind('focusin');
+	$("#validar_codigo_descuento").unbind("click");
+	$("#validar_codigo_descuento").click(function(event) {
+
+	event.preventDefault();
+
+	var o = $("#discount_name").val(),
+			a = $("#subtotal").val();
+		$("#discount_note").html(""), $.ajax({
+			type: "post",
+			url: "/ajax/pre_orders/codigo_descuento.phtml",
+			dataType: "json",
+			cache: "false",
+			data: {
+				discount_name: o,
+				subtotal: a
+			},
+			success: function(o) {
+		
+				$('.cart_discount_line').show();
+
+				o && ($("#tot_discount").html(o[0]), void 0 !== $("#tot_tax").html() && $("#tot_tax").html(o[1]), $("#tot_shipping").html(o[2]), $("#tot_total").html(o[3]), t && ($("#discount_note").html((o[0] == 0) ? o[4] : "<br/><span style='color:red;'>Cupon Aplicado correctamente</span>"  ), "" != o[4] && $("#discount_name").val("")), void 0 !== $("#tot_balance").html() && $("#tot_balance").html(o[6]));
+			
+			}.bind(this),
+			async: !1
+		});
+	});
+</script>
+
 </body>
 </html>
