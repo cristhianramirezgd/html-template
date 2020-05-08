@@ -37,20 +37,21 @@
 </main>
 <script>
 	(function(){
-	let $stateSelec = $('#state > option:first-child');
     let formPlaceholders = [
-        ['#first_name','Nombre'],
-        ['#last_name','Apellido'],
-        ['#address1','Dirección 1'],
-        ['#address2','Dirección 2'],
-        ['#phone','Teléfono'],
-        ['#phone2','Teléfono alterno]']
+        ['#first_name','* Nombre'],
+        ['#last_name','* Apellido'],
+        ['#address1','* Dirección 1'],
+        ['#address2','* Dirección 2'],
+        ['#phone','* Teléfono'],
+        ['#phone2','Teléfono alterno']
 	]
-	$stateSelec.text('Departamento');
+	$('#state > option:first-child').text('Departamento');
     for (let i in formPlaceholders) { 
 		let $idQuery =  $(formPlaceholders[i][0]);
 		let $placeHolder = formPlaceholders[i][1];
         $idQuery.attr('placeholder',$placeHolder);
     }
+	$('.table_address_selection tr > td:last-child > a:first-child')
+	.prepend('<i class="fas fa-external-link-alt"></i>');
 })();
 </script>

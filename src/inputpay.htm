@@ -26,10 +26,6 @@
 					<div class="cell small-12">
 						[[tpl_sale_table]]
 					</div>
-				</div>
-			</div>
-			<div class="cell small-12">
-				<div class="grid-x grid-margin-x bill_ship-to-um grid-padding-y">
 					<div class="cell small-12 pay-method">
 						[[cho_pay_methods]]
 					</div>
@@ -48,6 +44,8 @@
 		$('#tpl_bill_to_button > a, #tpl_ship_to_button > a')
 		.prepend('<i class="fas fa-external-link-alt"></i>');
 		$( window ).width() <= 640 ? $('#radio_cc').prop('checked', false):$('#radio_cc').attr('checked', 'checked');
-		$('.cart_total, .cart_discount_input').wrapAll('<div class="total-on-cart"></div>');
+		$('.cart_total, .cart_discount_input, #cho_pay_change_products').wrapAll('<div class="total-on-cart"></div>');
+		$('#discount_name, #validar_codigo_descuento, #discount_note,#payment_discounts + font').wrapAll('<div class="discount-wrapper"></div>');
+		$('#cho_pay_meth_desc_cc').prepend('<div class="legal_text_discount">Si tu tarjeta de crédito tiene alguna promoción vigente en la página, el descuento se verá reflejado al ingresar los datos de la tarjeta de crédito.<div>');
 	})();
 </script>
