@@ -73,9 +73,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 	<!-- header -->
 	<div class="check-add-to-card">
 		<svg width="100" height="100" viewBox="0 0 162 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-  
-			<path id="checkOkUniversomascotas" d="M45 80L68 104L117 59M156 81C156 122.421 122.421 156 81 156C39.5786 156 6 122.421 6 81C6 39.5786 39.5786 6 81 6C122.421 6 156 39.5786 156 81Z" stroke="#FF5722" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
-			</svg>
+			<path id="checkOkUniversomascotas" d="M45 80L68 104L117 59M156 81C156 122.421 122.421 156 81 156C39.5786 156 6 122.421 6 81C6 39.5786 39.5786 6 81 6C122.421 6 156 39.5786 156 81Z" stroke="#ff5722" stroke-width="11" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
 	</div>
 	<header class="um-header grid-container fluid">
 		<div class="um-searcher grid-container grid-x align-center-middle">
@@ -100,7 +99,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 			</div>
 			<div class="cell auto shrink login cm show-for-medium">
 			  <a href="/myaccount/">
-				<i class="user-g-um icon-um"></i>
+				<i class="user-o-um icon-um"></i>
 			  </a>
 			</div>
 			<div class="cell auto shoppingcart cm" id="contenedor_show_group">
@@ -132,7 +131,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</a>
 			</li>
 			<li class="menu-item drop">
-			  <a href="c/especie/"><i class="dog-g-um icon-um hide-for-medium"></i><i class="dog-w-um icon-um show-for-medium"></i>Especie<i class="arrow-r-o-um icon-um hide-for-medium mobile custom-float"></i></a>
+			  <a href="c/especie/"><i class="specie-g-um icon-um hide-for-medium"></i><i class="specie-w-um  icon-um show-for-medium"></i>Especie<i class="arrow-r-o-um icon-um hide-for-medium mobile custom-float"></i></a>
 			  <ul class="item">
 				<li class="link drop">
 				  <a href="/c/perros/">Perro <i class="arrow-r-o-um icon-um mobile"></i></a>
@@ -229,12 +228,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				</li>
 			  </ul>
 			</li>
-			<li class="menu-item"><a href=""><i class="grooming-g-um icon-um hide-for-medium"></i><i class="grooming-w-um icon-um show-for-medium"></i>Servicios</a></li>
+			<li class="menu-item"><a href=""><i class=" services-g-um icon-um hide-for-medium"></i><i class=" services-w-um icon-um show-for-medium"></i>Servicios</a></li>
 			<li class="menu-item"><a href=""><i class="paw-heart-g-um icon-um hide-for-medium"></i><i class="paw-heart-w-um icon-um show-for-medium"></i>Petlovers</a></li>
-			<li class="menu-item"><a href=""><i class="hand-heart-g-um icon-um hide-for-medium"></i><i class="hand-heart-w-um icon-um show-for-medium"></i>Donación</a></li>
-			<li class="menu-item"><a href=""><i class="dog-cat-heart-g-um icon-um hide-for-medium"></i><i class="dog-cat-heart-w-um icon-um show-for-medium"></i>Blog UM</a></li>
+			<li class="menu-item"><a href=""><i class="hand-paw-g-um icon-um hide-for-medium"></i><i class="hand-heart-w-um icon-um show-for-medium"></i>Donación</a></li>
+			<li class="menu-item"><a href=""><i class="blog-paw-g-um icon-um hide-for-medium"></i><i class="blog-paw-w-um icon-um show-for-medium"></i>Blog UM</a></li>
 			<li class="menu-item"><a href=""><i class="shop-g-um icon-um hide-for-medium"></i><i class="shop-w-um icon-um show-for-medium"></i>Tiendas</a></li>
-			<li class="menu-item"><a href=""><i class="paw-seal-g-um icon-um hide-for-medium"></i><i class="paw-seal-w-um icon-um show-for-medium"></i>UMGOLD</a></li>
+			<li class="menu-item"><a href=""><i class="paw-seal--um icon-um hide-for-medium"></i><i class="paw-seal-w-um icon-um show-for-medium"></i>UMGOLD</a></li>
 			<div class="addresMobile hide-for-medium">
 					<h4><i class="whatsapp-um icon-um"></i> Contáctanos</h4>
 				   <div class="support-tel">
@@ -287,7 +286,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 				<h2 class="h4 text-center font-bold">Métodos de pago</h2>
 			</div>
 			<div class="cell small-12 medium-6">
-				[[carrousel(28)]]
+				[[carrousel(33)]]	
 			</div>
 		</section>
 		<section class="footer-title-section grid-container full bg-pdp-warning">
@@ -450,25 +449,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		});
 
 	});
-</script>
+	setTimeout(() => $('#cartinfo_qty > b').text(''), 1400);
 
-	<!-- Global site icommktpush (icommktpush.js) - ICOMMKT Push -- v2.0 -->
-	<script>
-		(function (j, l, p, v, n, t, pu) {
-		j['_WPN'] = n;
-		j[n] = j[n] || function () {
-				(j[n].q = j[n].q || []).push(arguments)
-			}, j[n].l = 1 * new Date();
-		t = l.createElement(p),
-			pu = l.getElementsByTagName(p)[0];
-		t.async = 1;
-		t.src = v;
-		pu.parentNode.insertBefore(t, pu);
-	})(window, document, 'script', 'https://d12zyq17vm1xwx.cloudfront.net/v2/wpn.min.js', 'wpn');
-	
-	wpn('initialize', 2862, 'notifications-icommkt.com', 'track-icommkt.com');
-	wpn('checkSubscription');
-	wpn('pageView');
-	</script>
+</script>
+<!-- Global site icommktpush (icommktpush.js) - ICOMMKT Push -- v2.0 -->
+<script>
+	(function (j, l, p, v, n, t, pu) {
+	j['_WPN'] = n;
+	j[n] = j[n] || function () {
+			(j[n].q = j[n].q || []).push(arguments)
+		}, j[n].l = 1 * new Date();
+	t = l.createElement(p),
+		pu = l.getElementsByTagName(p)[0];
+	t.async = 1;
+	t.src = v;
+	pu.parentNode.insertBefore(t, pu);
+})(window, document, 'script', 'https://d12zyq17vm1xwx.cloudfront.net/v2/wpn.min.js', 'wpn');
+
+wpn('initialize', 2862, 'notifications-icommkt.com', 'track-icommkt.com');
+wpn('checkSubscription');
+wpn('pageView');
+</script>
 </body>
 </html>

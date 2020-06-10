@@ -17,7 +17,7 @@
             <div class="cell small-4">
               <div class="grid-container grid-x grid-padding-y align-center-middle">
                 <div class="cell small-4 text-center medium-text-right no-padding">
-                  <img src="https://cdn.totalcode.com.co/universomas-sandbox/web_content/assets/compra-segura-um.svg">
+                  <img src="[[cdn_url]]/web_content/assets/compra-segura-um.svg">
                 </div>
                 <div class="cell small-8">
                   <p class="no-margin padding-l">Compra 100% Segura</p>
@@ -27,7 +27,7 @@
             <div class="cell small-4 borders-h">
               <div class="grid-container grid-x grid-padding-y align-center-middle">
                 <div class="cell small-4 text-center medium-text-right no-padding">
-                  <img src="https://cdn.totalcode.com.co/universomas-sandbox/web_content/assets/envio-um.svg">
+                  <img src="[[cdn_url]]/web_content/assets/envio-um.svg">
                 </div>
                 <div class="cell small-8">
                   <p class="no-margin padding-l">Envio a todo el país</p>
@@ -37,7 +37,7 @@
             <div class="cell small-4">
               <div class="grid-container grid-x grid-padding-y align-center-middle">
                 <div class="cell small-4 text-center medium-text-right no-padding">
-                  <img src="https://cdn.totalcode.com.co/universomas-sandbox/web_content/assets/promociones-um.svg">
+                  <img src="[[cdn_url]]/web_content/assets/promociones-um.svg">
                 </div>
                 <div class="cell small-8">
                   <p class="no-margin padding-l">Promociones</p>
@@ -50,15 +50,15 @@
     </section>
     <section class="grid-container grid-x fluid max-desktop-width">
       <div class="cell medium-2 show-for-medium img-sticky">
-        [[carrousel(19)]]
+        [[carrousel(32)]]
       </div>
       <div class="cell small-12 medium-8">
         <section class="grid-container grid-x grid-padding-y align-center top-marks">
           <div class="cell small-12 show-for-medium">
               <h2 class="h3 color-pdp-warning text-center font-bold">Marcas top</h2>
           </div>
-          <div class="cell small-10">
-            [[carrousel(27)]]	
+          <div class="cell small-10 brands-slider">
+            [[carrousel(24)]]	
           </div>
         </section>
         <div class="grid-container grid-x align-center-middle">
@@ -66,39 +66,39 @@
               <div class="grid-x grid-margin-x align-center-middle">
                 <div class="cell auto">
                   <div class="circle-thumbnail">
-                    [[carrousel(24)]]
+                    <img src="[[cdn_url]]/web_content/assets/um-banner-test-7.jpg" alt="esterilización">
                   </div>
                   <h3 class="h4 text-center color-pdp-alert font-bold">Esterilización</h3>
                 </div>
                 <div class="cell auto">
                   <div class="circle-thumbnail">
-                    [[carrousel(25)]]
+                    <img src="[[cdn_url]]/web_content/assets/um-banner-test-8.jpg" alt="Consulta">
                   </div>
                   <h3 class="h4 text-center color-pdp-alert font-bold">Consulta</h3>
                 </div>
                 <div class="cell auto show-for-medium">
                   <div class="circle-thumbnail">
-                    [[carrousel(26)]]
+                    <img src="[[cdn_url]]/web_content/assets/um-banner-test-9.jpg" alt="">
                   </div>
                   <h3 class="h4 text-center color-pdp-alert font-bold">Profilaxis</h3>
                 </div>
               </div>
           </div>
           <div class="cell small-6 half-margin-horizontal-r half-padding-small-vertical-t">
-            [[carrousel(20)]]
+            [[carrousel(28)]]	
           </div>
           <div class="cell small-6 half-margin-horizontal-l half-padding-small-vertical-t">
-            [[carrousel(21)]]
+            [[carrousel(29)]]
           </div>
-          <div class="cell small-12 margin-top half-padding-small-vertical-t">
-            [[carrousel(22)]]
+          <div class="cell small-12 margin-top half-padding-small-vertical-t central-slider">
+            [[carrousel(30)]]	
           </div>
         </div>
 </div> 
         </div>
       </div>
       <div class="cell medium-2 show-for-medium img-sticky">
-        [[carrousel(18)]]
+        [[carrousel(31)]]	
       </div>
     </section>
     <section class="grid-container grid-x grid-padding-y align-center">
@@ -122,7 +122,7 @@
     $(document).ready(function () {
       let rigthArrowSlick = 'icon-um  arrow-r-o-um slick-next' ;
       let leftArrowSlick = 'icon-um  arrow-l-o-um slick-prev' ;
-      let sliderHome = $(`.banner-carousel, #carrousel_22`) ;
+      let sliderHome = $(`.banner-carousel, .central-slider > div`) ;
       let paddingGlobal = '40px';
       let globalSpeed = 7000 ;
       let mainBreackpoint = 480 ;
@@ -139,7 +139,7 @@
         dots: false
       };
       sliderHome.slick( slickStyle );
-      $('#carrousel_27').slick({
+      $('.brands-slider > div').slick({
           infinite: true,
           arrows: true,
           nextArrow: `<i class=" ${ rigthArrowSlick } "></i>`,
