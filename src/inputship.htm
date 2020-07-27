@@ -40,5 +40,8 @@
 	$('#state > option:first-child').text('Departamento');
 	$('.table_address_selection tr > td:last-child > a:first-child')
 	.prepend('<i class="fas fa-external-link-alt"></i>');
+	$('#updatecontactform #billing_main_table tr:nth-of-type(6) td input:last-child').before('<b id="addressComplement">*Dirección de Entrega (Apt-Bloque-Int-piso)</b>')
+	$('#addressComplement').css({ 'font-size': '20px', 'font-weight': '400' })
+
 })();
 </script>
