@@ -1,0 +1,29 @@
+{
+  "window.zoomLevel": -2,
+  "editor.fontSize": 14,
+  "editor.formatOnPaste": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.snippetSuggestions": "top",
+  "html.format.indentHandlebars": true,
+  "editor.tabSize": 2,
+  "editor.renderControlCharacters": true,
+  "editor.renderWhitespace": "none",
+  "editor.codeActionsOnSave": null,
+  "editor.renderLineHighlight": "gutter",
+  "workbench.colorTheme": "Solarized Dark",
+  "workbench.colorCustomizations": {
+    
+    "editor.selectionBackground": "#4ca2b6c6",
+    "editor.selectionHighlightBackground": "#129ab980",
+    "editor.findMatchBackground": "#00cc4476", //Current SEARCH MATCH
+    "editor.findMatchHighlightBackground": "#ff7b0072", //Other SEARCH MATCHES
+    "numberedBookmarks.lineBackground": "#007700",
+    "highlightLogicalLine.background": "#00000095",
+    // also can be changed per each theme
+    "[Default Dark+]": {
+      "highlightLogicalLine.background": "#ff000020"
+    }
+  },
+  "editor.fontLigatures": null,
+  "workbench.preferredDarkColorTheme": "Solarized-dark"
+}
